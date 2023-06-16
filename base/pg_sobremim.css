@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+main {
+    height: auto;
+}
+
+main>h1 {
+    font-size: 2em;
+}
+
+#história {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#história img {
+    border-radius: 500px;
+}
+
+#história div {
+    padding: 0px 0px 10px 20px;
+    font-size: 1.5em;
+}
+
+p {
+    text-align: justify;
+}
+
+#carreira {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#carreira img {
+    height: 400px;
+    border-radius: 30px;
+}
+
+#carreira div {
+    padding: 0px 20px 10px 0px;
+    font-size: 1.5em;
+}
+
+#contatos>h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contatos ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+ul img {
+    height: 100px;
+}
+
+.fac:hover {
+    background-image: url(../arquivos/icones/facebook.png);
+
+}
