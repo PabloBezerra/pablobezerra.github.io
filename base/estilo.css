@@ -23,6 +23,7 @@
 
 body {
     font-family: var(--font-principal);
+    background-color: white;
 }
 
 header {
@@ -162,6 +163,21 @@ main>section>div>a>div {
     margin: auto;
     width: 65px;
     height: 65px;
+}
+
+@media (max-width:610px) {
+    main {
+        height: auto;
+    }
+
+    main section {
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    main>section>div>a>div {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 1000px) {
