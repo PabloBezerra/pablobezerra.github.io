@@ -78,6 +78,11 @@ main>h1 {
     font-size: 2em;
 }
 
+main>h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+
 main>section {
     display: flex;
     justify-content: space-evenly;
