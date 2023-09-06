@@ -35,6 +35,10 @@ header{
     font-weight: bold;
 }
 
+#barra a:hover{
+    color: var(--azul);
+}
+
 #barra button{
     border: none;
 }
@@ -45,43 +49,105 @@ header{
 
 main{
     width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    margin-top: 56px;
     background: linear-gradient(180deg, rgba(23,26,38,1) 70%, rgba(35,240,199,1) 100%) fixed;
 }
 
-main section{
+main article{
     width: 90%;
     height: auto;
-    background-color: var(--anil);
+    background: var(--anil) url(./arquivos/fundo_inicio_cell.jpg)center center no-repeat scroll;
+    background-size: auto;
     margin: auto;
     border-radius: 15px;
     box-shadow: 0px 0px 10px black;
     padding: 10px;
+
     display: flex;
     flex-direction: column;
 }
 
-main section h1{
+main article h1{
     color: var(--branco);
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 20px;
 }
 
-main section p{
+main article p{
     color: var(--azul);
     text-transform: capitalize;
     font-size: 1.1em;
 }
 
-main section #perfil{
+main article #perfil{
     width: 80%;
     border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px #23f0c775;
     align-self: center;
-    box-shadow: 0px 0px 20px 5px #23f0c775
+}
+
+#icones{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#icones ul{
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#icones img{
+    width: 50px;
+}
+
+#games{
+    background: var(--anil) url(./arquivos/fundo_games_cell.jpg) center center no-repeat fixed ;
+}
+
+#business{
+    background: var(--anil) url(./arquivos/fundo_business_cell.jpg) center center no-repeat fixed ;
+
+}
+
+#extra{
+    background: var(--anil) url(./arquivos/fundo_extras_cell.jpg) center center no-repeat fixed ;
+
+}
+
+main section{
+    width: 90%;
+    height: auto;
+    min-height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section p{
+    color: var(--branco);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 40px 0px;
+}
+
+main #games > div{
+    /* height: 100px;
+    width: 100px; */
+    background-color: white;
 }
 
 ::-webkit-scrollbar{
