@@ -19,6 +19,7 @@
 body{
     height: 100vh;
     width: 100vw ;
+    background: linear-gradient(180deg, rgba(23,26,38,1) 70%, rgba(35,240,199,1) 100%) fixed;
 }
 
 header{
@@ -51,7 +52,6 @@ main{
     width: 100%;
     height: auto;
     margin-top: 56px;
-    background: linear-gradient(180deg, rgba(23,26,38,1) 70%, rgba(35,240,199,1) 100%) fixed;
 }
 
 main article{
@@ -88,13 +88,13 @@ main article #perfil{
     align-self: center;
 }
 
-#icones{
+main article #icones{
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
-#icones ul{
+main article #icones ul{
     width: 100%;
     list-style: none;
 
@@ -102,22 +102,23 @@ main article #perfil{
     justify-content: space-around;
 }
 
-#icones img{
+ main article #icones li img{
     width: 50px;
 }
 
-#games{
+main #games{
     background: var(--anil) url(./arquivos/fundo_games_cell.jpg) center center no-repeat fixed ;
+    background-size: contain; 
 }
 
-#business{
+main #business{
     background: var(--anil) url(./arquivos/fundo_business_cell.jpg) center center no-repeat fixed ;
-
+    background-size: contain; 
 }
 
-#extra{
+main #extra{
     background: var(--anil) url(./arquivos/fundo_extras_cell.jpg) center center no-repeat fixed ;
-
+    background-size: contain; 
 }
 
 main section{
@@ -128,26 +129,52 @@ main section{
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px black;
-    background-size: cover; 
+    padding: 10px;
+}
 
-    display: flex;
+main section .container{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main section p{
+main section h2{
     color: var(--branco);
     text-align: center;
     font-weight: bold;
-    font-size: 1.5em;
-    margin: 40px 0px;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px black;
+    margin: 20px 0px;
+    cursor: pointer;
 }
 
-main #games > div{
-    /* height: 100px;
-    width: 100px; */
-    background-color: white;
+main section .card{
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: var(--azul);
+    background-color: var(--anil);
+    box-shadow: 0px 0px 5px black;
+    color: var(--branco);
+    overflow: hidden;
+}
+
+main section div .card-title{
+    font-weight: bold;
+}
+
+main section div .btn{
+    border: none;
+    font-weight: bold;
+    background-color: var(--anil);
+    color: var(--azul);
+}
+
+main section div .btn:hover{
+    background-color: var(--azul);
+    color: var(--anil);
 }
 
 ::-webkit-scrollbar{

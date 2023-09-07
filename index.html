@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pablo Bezerra</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -17,9 +17,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Início <span class="sr-only">(Página atual)</span></a>
-            <a class="nav-item nav-link" href="#">Games</a>
-            <a class="nav-item nav-link" href="#">Business</a>
-            <a class="nav-item nav-link" href="#">Extras</a>
+            <a class="nav-item nav-link" href="#games" ontouchstart="mostrarCards(1)" onclick="mostarCards(1)">Games</a>
+            <a class="nav-item nav-link" href="#business" ontouchstart="mostarCards(2)" onclick="mostrarCards(2)">Business</a>
+            <a class="nav-item nav-link" href="#extra" ontouchstart="mostarCards(3)" onclick="mostrarCards(3)">Extras</a>
           </div>
         </div>
     </nav>
@@ -39,30 +39,171 @@
             </nav>
         </article>
         <section id="games">
-            <p>GAMES</p>
-            <div>
-
+            <h2 onclick="mostrarCards(1)" ontouchstart="mostarCards(1)">GAMES</h2>
+            <div class="container" id="icardGames">
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/eu_semfundo.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo da Velha</h5>
+                        <p class="card-text">O classico jogo da velha feito em python com PyQt6.</p>
+                        <a href="https://github.com/PabloBezerra/Primeiro-game" target="_blank" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
             </div>
         </section>
         <section id="business">
-            <p>BUSINESS</p>
-            <div>
-
+            <h2 onclick="mostrarCards(2)" ontouchstart="mostarCards(2)">BUSINESS</h2>
+            <div class="container" id="icardBusiness">
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
             </div>
         </section>
         <section id="extra">
-            <p>EXTRAS</p>
-            <div>
-
+            <h2 onclick="mostrarCards(3)" ontouchstart="mostarCards(3)">EXTRAS</h2>
+            <div class="container" id="icardExtras">
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/projeto_logoff.jpg" alt="Projeto Logoff">
+                    <div class="card-body">
+                        <h5 class="card-title">LogOff</h5>
+                        <p class="card-text">Um programa que agenda desligamento ou reinicialização do sistema do windows. .</p>
+                        <a href="https://github.com/PabloBezerra/logoff" target="_blank" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
+                <div class="card" style="font-family: Montserrat;">
+                    <img class="card-img-top" src="/arquivos/contrução.jpg" alt="Em breve">
+                    <div class="card-body">
+                        <h5 class="card-title">Em Breve!</h5>
+                        <p class="card-text">Mais novidades em breve.</p>
+                        <!-- <a href="#" class="btn btn-primary">Visitar</a> -->
+                    </div>
+                </div>
             </div>
         </section>
-
     </main>
     <footer>
         <p>&copy; Pablo Bezerra</p>
     </footer>
+    <script src="comandos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>
