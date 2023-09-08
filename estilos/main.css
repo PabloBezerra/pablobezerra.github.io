@@ -57,7 +57,7 @@ main{
 main article{
     width: 90%;
     height: auto;
-    background: var(--anil) url(./arquivos/fundo_inicio_cell.jpg)center center no-repeat scroll;
+    background: var(--anil) url(/arquivos/fundo_inicio_cell.jpg)center center no-repeat scroll;
     background-size: auto;
     margin: auto;
     border-radius: 15px;
@@ -107,17 +107,17 @@ main article #icones ul{
 }
 
 main #games{
-    background: var(--anil) url(./arquivos/fundo_games_cell.jpg) center center no-repeat fixed ;
+    background: var(--anil) url(/arquivos/fundo_games_cell.jpg) center center no-repeat fixed ;
     background-size: contain; 
 }
 
 main #business{
-    background: var(--anil) url(./arquivos/fundo_business_cell.jpg) center center no-repeat fixed ;
+    background: var(--anil) url(/arquivos/fundo_business_cell.jpg) center center no-repeat fixed ;
     background-size: contain; 
 }
 
 main #extra{
-    background: var(--anil) url(./arquivos/fundo_extras_cell.jpg) center center no-repeat fixed ;
+    background: var(--anil) url(/arquivos/fundo_extras_cell.jpg) center center no-repeat fixed ;
     background-size: contain; 
 }
 

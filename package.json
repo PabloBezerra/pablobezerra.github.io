@@ -1,0 +1,16 @@
+{
+  "name": "ola_mundo",
+  "version": "1.0.0",
+  "description": "Meu site Principal onde reunirei todos os meus projetos.",
+  "main": "comandos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Bezerra",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1"
+  }
+}
