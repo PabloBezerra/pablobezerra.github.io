@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Outfit&display=swap');
+
+:root{
+    --font: 'Montserrat', Arial , sans-serif;
+    --azul: #23F0C7;
+    --branco: #ffffff;
+    --anil: #171A26;
+}   
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    transition: all ease-in-out .5s;
+    list-style: none;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw ;
+    background: linear-gradient(180deg, rgba(23,26,38,1) 70%, rgba(35,240,199,1) 100%) fixed;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    width: 90%;
+    height: auto;
+    padding: 5px 10px;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    
+}
+
+header h1{
+    color: var(--branco);
+    font-size: 1.8em;
+}
+
+header span{
+    color: var(--branco);
+    cursor: pointer;
+}
+
+header nav{
+    display: none;
+    flex-basis:100% ;
+    background-color: var(--anil);
+}
+
+header li{
+    padding: 10px 0px;
+}
+
+header li:hover{
+    background-color: #161a29;
+}
+
+header a{
+    width: 100%;
+    height: 100%;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+header a:hover{
+    color: var(--azul);
+}
+
+main {
+    width: 90%;
+    height: auto;
+}
+
+main #inicio{
+    width: 100%;
+    height: auto;
+    background: var(--anil) url(../arquivos/fundo_inicio_cell.jpg) center scroll;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main #inicio h1{
+    margin-top: 50px;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+main #inicio p{
+    color: var(--azul);
+    text-transform: capitalize;
+    margin-top: 10px;
+    text-shadow: 0px 0px 20px black;
+}
+
+main #inicio #perfil{
+    width: 90%;
+    max-width: 350px;
+    border-radius: 50%;
+    margin-top: 20px;
+    align-self: center;
+    box-shadow: 0px 0px 10px var(--azul);
+}
+
+main #inicio #icones{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+main #inicio #icones ul{
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+ main #inicio #icones li img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+main .container{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .games{
+    background: var(--anil) url(../arquivos/fundo_games_cell.jpg)center no-repeat fixed;
+}
+
+main .business{
+    background: var(--anil) url(../arquivos/fundo_business_cell.jpg)center no-repeat fixed;
+}
+
+main .extras{
+    background: var(--anil) url(../arquivos/fundo_extras_cell.jpg)center no-repeat fixed;
+}
+
+main .container h2{
+    color: var(--branco);
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px black;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+main .album{
+    width: 90%;
+    height: auto;
+    display: none;
+}
+
+main .card {
+    width: 100%;
+    margin: 5px 0px;
+    background-color: var(--anil);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main .card:hover{
+    box-shadow: 0px 0px 5px var(--azul);
+}
+
+main .card img{
+    width: 100%;
+}
+
+main .card #info{
+    padding: 10px;
+}
+
+main .card h3, main .card p{
+    color: var(--branco);
+    margin-bottom: 10px;
+}
+
+main .card button{
+    background-color: var(--anil);
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+}
+
+main .card button:hover{
+    background-color: var(--azul);
+    color: var(--anil);
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
