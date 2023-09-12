@@ -1,28 +1,29 @@
+// Edita o comportamento do container que revela os cards de projetos por area.
 function mostrarCards(n, condição=true){
     switch (n){
         case 1:
             if (albumGames.style.display === 'none'){
-                albumGames.style.display = 'block';
+                albumGames.style.display = 'flex';
                 albumBusiness.style.display = 'none';
                 albumExtras.style.display = 'none';
             }else{
                 albumGames.style.display = 'none';
             }
             break;
-            case 2: 
+        case 2: 
             if (albumBusiness.style.display === 'none'){
                 albumGames.style.display = 'none';
-                albumBusiness.style.display = 'block';
+                albumBusiness.style.display = 'flex';
                 albumExtras.style.display = 'none';
             }else{
                 albumBusiness.style.display = 'none';
             }
             break;
-            case 3: 
+        case 3: 
             if (albumExtras.style.display === 'none'){
                 albumGames.style.display = 'none';
                 albumBusiness.style.display = 'none';
-                albumExtras.style.display = 'block';
+                albumExtras.style.display = 'flex';
             }else{
                 albumExtras.style.display = 'none';
             }
@@ -31,17 +32,19 @@ function mostrarCards(n, condição=true){
     if (condição){revelMenu()};
 }
 
+// Edita o comportamento do menu da barra de menu.
 const revelMenu = () => {
     let menu = document.querySelector('#menu');
     let barra = document.querySelector('#barra');
 
     if (menu.style.display === 'none'){
         menu.style.display = 'block';
-        if(barra.style.backgroundColor !== 'var(--anil)'){
-            barra.style.backgroundColor = 'var(--anil)'
+        if(barra.classList !== 'novo'){
+            barra.classList = 'novo';
+        }else{
+            barra.classList = '';
         }
         return;
     }
     menu.style.display = 'none';
-    barra.style.backgroundColor = 'transparent'
 }

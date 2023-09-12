@@ -31,9 +31,9 @@ header{
     width: 90%;
     height: auto;
     padding: 5px 10px;
-    background-color: transparent;
-
-    display: flex;
+    background-color: var(--anil);
+    
+    display: none;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -41,9 +41,13 @@ header{
     
 }
 
+.novo{
+   display: flex;
+}
+
 header h1{
     color: var(--branco);
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 header span{
@@ -85,7 +89,7 @@ main {
 main #inicio{
     width: 100%;
     height: auto;
-    background: var(--anil) url(../arquivos/fundo_inicio_cell.jpg) center scroll;
+    background: var(--anil) url(../arquivos/fundos/fundo_inicio_cell.jpg) center scroll;
     background-size: cover;
     padding: 10px;
     border-radius: 10px;
@@ -95,7 +99,7 @@ main #inicio{
 }
 
 main #inicio h1{
-    margin-top: 50px;
+    margin-top: 10px;
     color: var(--branco);
     text-transform: uppercase;
     font-size: 2.5em;
@@ -140,7 +144,7 @@ main .container{
     width: 100%;
     height: auto;
     min-height: 100px;
-    background-size: cover;
+    background-size: auto;
     border-radius: 8px;
     margin-top: 10px;
 
@@ -151,15 +155,15 @@ main .container{
 }
 
 main .games{
-    background: var(--anil) url(../arquivos/fundo_games_cell.jpg)center no-repeat fixed;
+    background: var(--anil) url(../arquivos/fundos/fundo_games_cell.jpg)center no-repeat fixed;
 }
 
 main .business{
-    background: var(--anil) url(../arquivos/fundo_business_cell.jpg)center no-repeat fixed;
+    background: var(--anil) url(../arquivos/fundos/fundo_business_cell.jpg)center no-repeat fixed;
 }
 
 main .extras{
-    background: var(--anil) url(../arquivos/fundo_extras_cell.jpg)center no-repeat fixed;
+    background: var(--anil) url(../arquivos/fundos/fundo_extras_cell.jpg)center no-repeat fixed;
 }
 
 main .container h2{
@@ -171,13 +175,15 @@ main .container h2{
 }
 
 main .album{
-    width: 90%;
+    width: 100%;
     height: auto;
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .card {
-    width: 100%;
+    width: 90%;
     margin: 5px 0px;
     background-color: var(--anil);
     border-radius: 10px;
@@ -185,6 +191,7 @@ main .card {
 }
 
 main .card:hover{
+    width: 95%;
     box-shadow: 0px 0px 5px var(--azul);
 }
 
