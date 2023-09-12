@@ -8,6 +8,7 @@
     --anil: #171A26;
 }   
 
+/* Reset */
 *{
     padding: 0;
     margin: 0;
@@ -17,6 +18,7 @@
     list-style: none;
 }
 
+/* Configurando o corpo da página */
 html, body{
     height: 100vh;
     width: 100vw ;
@@ -27,22 +29,26 @@ html, body{
     flex-direction: column;
 }
 
+/* Configurando o cabeçalho e o menu de navegação */
 header{
     width: 90%;
-    height: auto;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
     padding: 5px 10px;
     background-color: var(--anil);
     
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: fixed;
-    
+    position: fixed;    
 }
 
 .novo{
-   display: flex;
+   height: 50px;
+   overflow: visible;
+   visibility: visible;
 }
 
 header h1{
@@ -56,9 +62,19 @@ header span{
 }
 
 header nav{
-    display: none;
+    display: flex;
+    padding: 5px 10px;
     flex-basis:100% ;
     background-color: var(--anil);
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+header .visivel{
+    height: 300px;
+    overflow:auto;
+    visibility: visible;
 }
 
 header li{
@@ -81,6 +97,7 @@ header a:hover{
     color: var(--azul);
 }
 
+/* Configurando o conteúdo principal da página */
 main {
     width: 90%;
     height: auto;
@@ -223,6 +240,10 @@ main .card button:hover{
     color: var(--anil);
 }
 
+/* Configurando o rodapé da página */
+
+
+/* Configurações extras*/
 ::-webkit-scrollbar{
     width: 0;
 }

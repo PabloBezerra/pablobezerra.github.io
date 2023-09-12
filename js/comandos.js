@@ -35,16 +35,5 @@ function mostrarCards(n, condição=true){
 // Edita o comportamento do menu da barra de menu.
 const revelMenu = () => {
     let menu = document.querySelector('#menu');
-    let barra = document.querySelector('#barra');
-
-    if (menu.style.display === 'none'){
-        menu.style.display = 'block';
-        if(barra.classList !== 'novo'){
-            barra.classList = 'novo';
-        }else{
-            barra.classList = '';
-        }
-        return;
-    }
-    menu.style.display = 'none';
+    menu.classList.toggle('visivel')
 }
