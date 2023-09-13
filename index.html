@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pablo Bezerra</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link rel="stylesheet" href="css/media+600.css" media="screen" type="text/css">
+        <link rel="stylesheet" href="css/media+500.css" media="screen" type="text/css">
         <link rel="stylesheet" href="css/media+768.css" media="screen" type="text/css">
         <link rel="stylesheet" href="css/media+992.css" media="screen" type="text/css">
         <link rel="stylesheet" href="css/media+1200.css" media="screen" type="text/css">
+        <link rel="stylesheet" href="css/animacao.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" type="text/css"/>
         <script defer src="js/comandos.js"></script>
         <script defer src="js/organizador.js"></script>
@@ -19,12 +20,12 @@
         <span onclick="revelMenu()" class="material-symbols-outlined">menu</span>
         <nav id="menu">
             <ul>
-                <li><a href="#inicio" target="_self">Início</a></li>
-                <li><a href="#carreitra" target="_self">Carreira</a></li>
-                <li><a href="#habilidades" target="_self">Habilidades</a></li>
-                <li><a onclick="mostrarCards(1)" href="#games">Games</a></li>
-                <li><a onclick="mostrarCards(2)" href="#Business">Business</a></li>
-                <li><a onclick="mostrarCards(3)" href="#Extras">Extras</a></li>
+                <li><a onclick="revelMenu()" href="#inicio" target="_self">Início</a></li>
+                <li><a onclick="revelMenu()" href="#carreira" target="_self">Carreira</a></li>
+                <li><a onclick="revelMenu()" href="#habilidades" target="_self">Habilidades</a></li>
+                <li><a onclick="mostrarCards(1)" href="#games" target="_self">Games</a></li>
+                <li><a onclick="mostrarCards(2)" href="#Business" target="_self">Business</a></li>
+                <li><a onclick="mostrarCards(3)" href="#Extras" target="_self">Extras</a></li>
             </ul>
         </nav>
     </header>
@@ -44,7 +45,15 @@
                 </ul>
             </nav>
         </section>
+        <h2 id="titulo" class="blink-2"> Sobre Mim</h2>
+        <section id="carreira" class="container">
+            <p>Olá, sou um profissional multifacetado com uma formação sólida em Licenciatura em Educação Física pela Universidade Federal de Pernambuco. Além disso, trago uma série de habilidades que enriquecem minha abordagem no mundo digital. Com experiência em manutenção e limpeza de computadores, domínio do pacote Office e um talento especial para design gráfico, estou preparado para oferecer soluções criativas e técnicas em desenvolvimento web. Este é apenas o começo, pois em breve compartilharei minha paixão e competência em programação, que certamente enriquecerão ainda mais meu portfólio.</p> <br>
+            <p>Sou apaixonado por desafios e constantemente busco aprimorar minhas habilidades. Acredito que a diversidade de conhecimento que trago para o mundo da programação é um diferencial valioso. Meu percurso acadêmico e experiência profissional me capacitam a encarar projetos com uma abordagem abrangente e criativa. Esteja preparado para explorar um portfólio em constante evolução, onde o desenvolvimento web se encontra com o design, a tecnologia e a educação física, criando uma experiência única e inovadora.</p>
+        </section>
+        <h2 id="titulo" class="blink-2"> Projetos </h2>
+        <section id="habilidades">
 
+        </section>
         <section id="games" class="container games">
             <h2 onclick="mostrarCards(1, false)"> games </h2>
             <div id="albumGames" class="album">

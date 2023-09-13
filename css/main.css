@@ -18,7 +18,7 @@
     list-style: none;
 }
 
-/* Configurando o corpo da página */
+/* CONFIGURANDO O CORPO DA PÁGINA */
 html, body{
     height: 100vh;
     width: 100vw ;
@@ -29,7 +29,7 @@ html, body{
     flex-direction: column;
 }
 
-/* Configurando o cabeçalho e o menu de navegação */
+/* CONFIGURANDO O CABEÇALHO E O MENU DE NAVEGAÇÃO */
 header{
     width: 90%;
     height: 0px;
@@ -44,23 +44,19 @@ header{
     flex-wrap: wrap;
     position: fixed;    
 }
-
 .novo{
    height: 50px;
    overflow: visible;
    visibility: visible;
 }
-
 header h1{
     color: var(--branco);
     font-size: 1.6em;
 }
-
 header span{
     color: var(--branco);
     cursor: pointer;
 }
-
 header nav{
     display: flex;
     padding: 5px 10px;
@@ -70,21 +66,19 @@ header nav{
     overflow: hidden;
     visibility: hidden;
 }
-
 header .visivel{
     height: 300px;
     overflow:auto;
     visibility: visible;
+    position: relative;
+    z-index: 999;
 }
-
 header li{
     padding: 10px 0px;
 }
-
 header li:hover{
     background-color: #161a29;
 }
-
 header a{
     width: 100%;
     height: 100%;
@@ -92,17 +86,16 @@ header a{
     text-decoration: none;
     font-size: 1.4em;
 }
-
 header a:hover{
     color: var(--azul);
 }
 
-/* Configurando o conteúdo principal da página */
+/* CONFIGURANDO O CORPO DO SITE */
 main {
     width: 90%;
     height: auto;
 }
-
+/* Configurando o bloco início */
 main #inicio{
     width: 100%;
     height: auto;
@@ -114,36 +107,31 @@ main #inicio{
     display: flex;
     flex-direction: column;
 }
-
 main #inicio h1{
     margin-top: 10px;
     color: var(--branco);
     text-transform: uppercase;
     font-size: 2.5em;
 }
-
 main #inicio p{
     color: var(--azul);
     text-transform: capitalize;
     margin-top: 10px;
     text-shadow: 0px 0px 20px black;
 }
-
 main #inicio #perfil{
-    width: 90%;
-    max-width: 350px;
+    width: 80%;
+    max-width: 300px;
     border-radius: 50%;
     margin-top: 20px;
     align-self: center;
     box-shadow: 0px 0px 10px var(--azul);
 }
-
 main #inicio #icones{
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
-
 main #inicio #icones ul{
     width: 100%;
     list-style: none;
@@ -151,12 +139,29 @@ main #inicio #icones ul{
     display: flex;
     justify-content: space-around;
 }
-
  main #inicio #icones li img{
     width: 50px;
     border-radius: 50%;
 }
+/* Configurando o bloco Sobre mim */
+main > h2{
+    color: var(--azul);
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0px;
+    z-index: 1;
+}
+main #carreira{
+    background-color: var(--anil);
+    padding: 10px;
+}
+main #carreira p{
+    color: white;
+    font-size: 1.1em;
+    text-align: justify;
+}
 
+/* Configurando o bloco Projetos */
 main .container{
     width: 100%;
     height: auto;
@@ -170,19 +175,15 @@ main .container{
     align-items: center;
     justify-content: center;
 }
-
 main .games{
-    background: var(--anil) url(../arquivos/fundos/fundo_games_cell.jpg)center no-repeat fixed;
+    background: var(--anil) url(../arquivos/fundos/fundo_games_cell.jpg)center center no-repeat fixed;
 }
-
 main .business{
     background: var(--anil) url(../arquivos/fundos/fundo_business_cell.jpg)center no-repeat fixed;
 }
-
 main .extras{
     background: var(--anil) url(../arquivos/fundos/fundo_extras_cell.jpg)center no-repeat fixed;
 }
-
 main .container h2{
     color: var(--branco);
     text-transform: uppercase;
@@ -190,41 +191,43 @@ main .container h2{
     margin: 10px 0px;
     cursor: pointer;
 }
-
 main .album{
     width: 100%;
-    height: auto;
-    display: none;
+    height: 0;
+    overflow-y: hidden;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+main .revelar{
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main .card {
-    width: 90%;
+    width: 80%;
     margin: 5px 0px;
     background-color: var(--anil);
     border-radius: 10px;
-    overflow: hidden;
 }
-
 main .card:hover{
     width: 95%;
     box-shadow: 0px 0px 5px var(--azul);
 }
-
 main .card img{
     width: 100%;
+    border-radius: 10px 10px 0px 0px ;
 }
-
 main .card #info{
     padding: 10px;
 }
-
 main .card h3, main .card p{
     color: var(--branco);
     margin-bottom: 10px;
 }
-
 main .card button{
     background-color: var(--anil);
     color: var(--azul);
@@ -234,7 +237,6 @@ main .card button{
     border: none;
     padding: 8px;
 }
-
 main .card button:hover{
     background-color: var(--azul);
     color: var(--anil);
@@ -247,4 +249,3 @@ main .card button:hover{
 ::-webkit-scrollbar{
     width: 0;
 }
-
