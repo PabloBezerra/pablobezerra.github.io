@@ -98,14 +98,16 @@ main {
 /* Configurando o bloco início */
 main #inicio{
     width: 100%;
-    height: auto;
+    height: 90vh;
     background: var(--anil) url(../arquivos/fundos/fundo_inicio_cell.jpg) center scroll;
     background-size: cover;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 10px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 main #inicio h1{
     margin-top: 10px;
