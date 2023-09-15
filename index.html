@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/media+768.css" media="screen" type="text/css">
         <link rel="stylesheet" href="css/media+992.css" media="screen" type="text/css">
         <link rel="stylesheet" href="css/media+1200.css" media="screen" type="text/css">
-        <link rel="stylesheet" href="css/animacao.css">
+        <link rel="stylesheet" href="css/animacao.css" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" type="text/css"/>
         <script defer src="js/comandos.js"></script>
         <script defer src="js/organizador.js"></script>
@@ -24,15 +24,17 @@
                 <li><a onclick="revelMenu()" href="#carreira" target="_self">Carreira</a></li>
                 <li><a onclick="revelMenu()" href="#habilidades" target="_self">Habilidades</a></li>
                 <li><a onclick="mostrarCards(1)" href="#games" target="_self">Games</a></li>
-                <li><a onclick="mostrarCards(2)" href="#Business" target="_self">Business</a></li>
-                <li><a onclick="mostrarCards(3)" href="#Extras" target="_self">Extras</a></li>
+                <li><a onclick="mostrarCards(2)" href="#business" target="_self">Business</a></li>
+                <li><a onclick="mostrarCards(3)" href="#extras" target="_self">Extras</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="inicio">
-            <h1>Pablo Bezerra</h1>
-            <p>desenvolvedor front-end<br> desenvolvedor de aplicativos</p>
+            <div>
+                <h1>Pablo Bezerra</h1>
+                <p>desenvolvedor front-end<br> desenvolvedor de aplicativos</p>
+            </div>
             <img id="perfil" src="/arquivos/imagens/eu.jpg" alt="imagem de perfil de Pablo Bezerra">
             <h2></h2>
             <nav id="icones">
@@ -47,13 +49,43 @@
         </section>
         <h2 id="titulo" class="blink-2"> Sobre Mim</h2>
         <section id="carreira" class="container">
+            <h3>Carreira</h3><br>
             <p>Olá, sou um profissional multifacetado com uma formação sólida em Licenciatura em Educação Física pela Universidade Federal de Pernambuco. Além disso, trago uma série de habilidades que enriquecem minha abordagem no mundo digital. Com experiência em manutenção e limpeza de computadores, domínio do pacote Office e um talento especial para design gráfico, estou preparado para oferecer soluções criativas e técnicas em desenvolvimento web. Este é apenas o começo, pois em breve compartilharei minha paixão e competência em programação, que certamente enriquecerão ainda mais meu portfólio.</p> <br>
             <p>Sou apaixonado por desafios e constantemente busco aprimorar minhas habilidades. Acredito que a diversidade de conhecimento que trago para o mundo da programação é um diferencial valioso. Meu percurso acadêmico e experiência profissional me capacitam a encarar projetos com uma abordagem abrangente e criativa. Esteja preparado para explorar um portfólio em constante evolução, onde o desenvolvimento web se encontra com o design, a tecnologia e a educação física, criando uma experiência única e inovadora.</p>
         </section>
-        <h2 id="titulo" class="blink-2"> Projetos </h2>
         <section id="habilidades">
+            <h3>Habilidades</h3>
+            <div class="carrossel">
+                <div class="amontoado" id="hab">
+                    <div>
+                        <img src="./arquivos/icones/icon_python.png" alt="Python">
+                        <p><em>Python</em> <br> É amplamente usada no desenvolvimento web, automação, análise de dados e muito mais.  </p>
+                    </div>
+                    <div>
+                        <img src="./arquivos/icones/icon_html.png" alt="Html">
+                        <p><em>HTML</em> <br> (Hypertext Markup Language) é a linguagem padrão para criar páginas da web</p>
+                    </div>
+                    <div>
+                        <img src="./arquivos/icones/icon_css.png" alt="Css">
+                        <p><em>CSS</em> <br> (Cascading Style Sheets),é uma linguagem poderosa para personalizar a estética das páginas web.</p>
+                    </div>
+                    <div>
+                        <img src="./arquivos/icones/icon_js.png" alt="JavaScript">
+                        <p><em>JavaScript</em> <br> É uma linguagem de programação fundamental para o desenvolvimento web</p>
+                    </div>
+                    <div>
+                        <img src="./arquivos/icones/icon_atenção.png" alt="Em formação">
+                        <p><em>Em formação:</em> <br> React, Bootstrap, QsLite, MySQL</p>
+                    </div>
+                </div>
+                <div class="pass">
+                    <i onclick="passar(1)"><span class="material-symbols-outlined" >arrow_back_ios</span></i>
+                    <i onclick="passar(2)"><span class="material-symbols-outlined" >arrow_forward_ios</span></i>
+                </div>
+            </div>
 
         </section>
+        <h2 id="titulo" class="blink-2"> Projetos </h2>
         <section id="games" class="container games">
             <h2 onclick="mostrarCards(1, false)"> games </h2>
             <div id="albumGames" class="album">
@@ -96,6 +128,7 @@
 
     </main>
     <footer>
+        <form></form>
         <p>&copy; Pablo Bezerra</p>
     </footer>
 </body>

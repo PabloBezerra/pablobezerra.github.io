@@ -34,6 +34,36 @@ function mostrarCards(n, condição=true){
 
 // Edita o comportamento do menu da barra de menu.
 const revelMenu = () => {
-    let menu = document.querySelector('#menu')
-    menu.classList.toggle('visivel')
+    let menu = document.querySelector('#menu');
+    menu.classList.toggle('visivel');
+}
+
+// Edita o comportamento do carrossel.
+const car = document.getElementById('hab');
+const divs = document.querySelectorAll('#hab > div');
+
+let cont = -2; 
+
+function carrossel(addcont=true){
+    if (addcont){
+        cont ++;
+    }
+    if(cont >= divs.length -2 ){
+        cont = -2;
+    }else if( cont < -2){
+        cont = divs.length -2;
+    }
+    car.style.transform = `translateX(${-cont*290}px)`;
+    console.log
+}
+
+let atualizador = setInterval(carrossel, 10000);
+
+function passar(n) {
+    if (n === 1){
+        cont --;
+    }else{
+        cont ++;
+    }
+    carrossel(false);
 }

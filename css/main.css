@@ -14,15 +14,16 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font);
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .8s;
     list-style: none;
 }
 
 /* CONFIGURANDO O CORPO DA PÁGINA */
 html, body{
     height: 100vh;
-    width: 100vw ;
-    background: linear-gradient(180deg, rgba(23,26,38,1) 70%, rgba(35,240,199,1) 100%) fixed;
+    width: calc(100vw - 5px) ;
+    min-width: 300px;
+    background: linear-gradient(180deg, var(--anil) 70%, var(--azul) 100%) fixed;
 
     display: flex;
     align-items: center;
@@ -42,7 +43,8 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: fixed;    
+    position: fixed;
+    z-index: 1000;    
 }
 .novo{
    height: 50px;
@@ -163,6 +165,78 @@ main #carreira p{
     text-align: justify;
 }
 
+main #habilidades{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--anil);
+}
+main #habilidades h3, main #carreira h3{
+    text-align: center;
+    color: var(--azul);
+    font-size: 1.5em;
+    flex-basis: 100%;
+}
+main #habilidades .carrossel{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    overflow:hidden;
+    position: relative;
+}
+main #habilidades .amontoado{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(0);
+}
+main #habilidades div{
+    min-width: 280px;
+    height: 230px;
+    margin: 0px 5px;
+    background-color: #ffffff15;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main #habilidades p{
+    color: var(--branco);
+    text-align: center;
+    font-size: 1em;
+}
+main #habilidades em{
+    font-style: normal;
+    color: var(--azul);
+    font-weight: bold;
+}
+main #habilidades img{
+    width: 100px;
+}
+main #habilidades .pass{
+    width: 100%;
+    background-color: transparent;
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+}
+main #habilidades .pass span{
+    font-size: 2.5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.808);
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+main #habilidades .pass span:hover{
+    font-size: 3em;
+}
+
 /* Configurando o bloco Projetos */
 main .container{
     width: 100%;
@@ -212,7 +286,7 @@ main .revelar{
 main .card {
     width: 80%;
     margin: 5px 0px;
-    background-color: var(--anil);
+    background-color: #171a26cb;
     border-radius: 10px;
 }
 main .card:hover{
@@ -248,6 +322,24 @@ main .card button:hover{
 
 
 /* Configurações extras*/
-::-webkit-scrollbar{
-    width: 0;
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, var(--anil) 70%, var(--azul) 100%);
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff85;
+    border-radius: 3px;
+}
+
+.revelar::-webkit-scrollbar {
+    width: 5px;
+}
+.revelar::-webkit-scrollbar-track {
+    background: transparent;
+} 
+.revelar::-webkit-scrollbar-thumb {
+    background-color: #ffffff85;
+    border-radius: 3px;
 }
