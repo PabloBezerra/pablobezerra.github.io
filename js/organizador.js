@@ -2,14 +2,14 @@
 const areas = ['Games', 'Business', 'Extras'];
 const inserir = () => {
     for (let a in areas){
-        const card = document.querySelectorAll(`#album${areas[a]}> .card`);
+        const card = document.querySelectorAll(`#${areas[a]}album> .card`);
         ciarCards(6 - card.length, areas[a]);
     }
 }
 const ciarCards = (quantidade, local) => {
     for (let n = 0; n < quantidade; n++){
 
-        const lugar = document.querySelector(`#album${local}`)
+        const lugar = document.querySelector(`#${local}album`)
         let div = document.createElement("div");
         div.className = `card`;
         div.innerHTML = `

@@ -50,8 +50,9 @@
         <h2 id="titulo" class="blink-2"> Sobre Mim</h2>
         <section id="carreira" class="container">
             <h3>Carreira</h3><br>
-            <p>Olá, sou um profissional multifacetado com uma formação sólida em Licenciatura em Educação Física pela Universidade Federal de Pernambuco. Além disso, trago uma série de habilidades que enriquecem minha abordagem no mundo digital. Com experiência em manutenção e limpeza de computadores, domínio do pacote Office e um talento especial para design gráfico, estou preparado para oferecer soluções criativas e técnicas em desenvolvimento web. Este é apenas o começo, pois em breve compartilharei minha paixão e competência em programação, que certamente enriquecerão ainda mais meu portfólio.</p> <br>
-            <p>Sou apaixonado por desafios e constantemente busco aprimorar minhas habilidades. Acredito que a diversidade de conhecimento que trago para o mundo da programação é um diferencial valioso. Meu percurso acadêmico e experiência profissional me capacitam a encarar projetos com uma abordagem abrangente e criativa. Esteja preparado para explorar um portfólio em constante evolução, onde o desenvolvimento web se encontra com o design, a tecnologia e a educação física, criando uma experiência única e inovadora.</p>
+            <p>Olá, me chamo Pablo da Silva Bezerra, e sou formado em Licenciatura em Educação Física pela Universidade Federal de Pernambuco. Trago uma série de habilidades que enriquecem minha abordagem no mundo digital. Com experiência em manutenção e limpeza de computadores, domínio do pacote Office e um talento especial para design gráfico, estou preparado para oferecer soluções criativas e técnicas em desenvolvimento web.</p> <br>
+            <p>Sou apaixonado por desafios e constantemente busco aprimorar minhas habilidades. Acredito que a diversidade de conhecimento que trago para o mundo da programação é um diferencial valioso. Meu percurso acadêmico e experiência profissional me capacitam a encarar projetos com uma abordagem abrangente e criativa. </p>
+            <abbr title="Dowload do Curriculo de Pablo Bzerra em PDF"><a href="./arquivos/Curriculo_Pablo_Bezerra_screen.pdf" download="Curriculo Pablo Bezerra">Download do CV</a></abbr>
         </section>
         <section id="habilidades">
             <h3>Habilidades</h3>
@@ -75,7 +76,7 @@
                     </div>
                     <div>
                         <img src="./arquivos/icones/icon_atenção.png" alt="Em formação">
-                        <p><em>Em formação:</em> <br> React, Bootstrap, QsLite, MySQL</p>
+                        <p><em>Em formação:</em> <br> React, Bootstrap, NodeJs, MySQL</p>
                     </div>
                 </div>
                 <div class="pass">
@@ -86,9 +87,12 @@
 
         </section>
         <h2 id="titulo" class="blink-2"> Projetos </h2>
-        <section id="games" class="container games">
-            <h2 onclick="mostrarCards(1, false)"> games </h2>
-            <div id="albumGames" class="album">
+        <section id="games" class="container Games">
+            <div id="agrupar" onclick="mostrarCards(1, false)">
+                <h2> games</h2>
+                <span id="iGames" class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div id="Gamesalbum" class="album">
                 <div class="card">
                     <div>
                         <img src="./arquivos/imagens/projeto_jogodavelha.jpg" alt="Projeto jogo da velha">
@@ -102,16 +106,22 @@
             </div>
         </section>
 
-        <section id="business" class="container business">
-            <h2 onclick="mostrarCards(2, false)"> business </h2> 
-            <div id="albumBusiness" class="album">
+        <section id="business" class="container Business">
+            <div id="agrupar" onclick="mostrarCards(2, false)">
+                <h2> business </h2>
+                <span id="iBusiness" class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div id="Businessalbum" class="album">
 
             </div>
         </section>
 
-        <section id="extras" class="container extras">
-            <h2 onclick="mostrarCards(3, false)"> extras </h2>
-            <div id="albumExtras" class="album">
+        <section id="extras" class="container Extras">
+            <div id="agrupar" onclick="mostrarCards(3, false)">
+                <h2> extras </h2>
+                <span id="iExtras" class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div id="Extrasalbum" class="album">
                 <div class="card">
                     <div>
                         <img src="./arquivos/imagens/projeto_logoff.jpg" alt="Projeto jogo da velha">
@@ -127,8 +137,36 @@
         </section>
 
     </main>
-    <footer>
-        <form></form>
+    <footer id="footer">
+        <div id="agrupar2">
+            <h4>Contate me</h4>
+            <nav id="icones">
+                <ul>
+                    <li><a href="https://www.facebook.com/pablo.dasilva.505" target="_blank"><img id="face" src="./arquivos/icones/icon_face.png" alt="Perfil no facebook"></a></li>
+                    <li><a href="https://www.instagram.com/pablobezerras/" target="_blank"> <img id="insta" src="./arquivos/icones/icon_insta.png" alt="perfil no instagram"></a></li>
+                    <li><a href="https://twitter.com/PabloBezerras" target="_blank"><img id="twitter" src="./arquivos/icones/icon_twitter.png" alt="perfil no twitter"></a></li>
+                    <li><a href="https://www.linkedin.com/in/pablo-bezerra-18710524a/" target="_blank"><img id="linkedin" src="./arquivos/icones/icon_linkedin.png" alt="perfil no linkedin"></a></li>
+                    <li><a href="https://github.com/PabloBezerra" target="_blank"><img id="github" src="./arquivos/icones/icon_github.png" alt="perfil no github"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <hr>
+        <h4>Me mande uma mensagem!</h4>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="3a82d9fb-4007-4f06-b9a3-1e88ab43646a">
+            <input type="hidden" name="redirectTo" value="pablobezerra.github.io#footer">
+
+            <label for="inome"> Seu Nome</label>
+            <input type="text" name="name" id="inome" placeholder="Ex. José dos Santos" autocomplete="name" minlength="3" required>
+            <label for="iemail"> Seu Email</label>
+            <input type="email" name="email" id="iemal" placeholder="example.@email.com" autocomplete="email" required>
+            <label for="imensagem"> Sua Mensagem</label>
+            <textarea name="message" id="imensagem" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Enviar" id="botao">
+
+        </form>
+        <hr>
         <p>&copy; Pablo Bezerra</p>
     </footer>
 </body>
