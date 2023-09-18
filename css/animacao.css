@@ -1,0 +1,18 @@
+@media screen and (min-width:600px) {
+
+    header li:hover{background-color: #161a29;}
+
+    header a:hover{color: var(--azul);}
+    
+    main #habilidades .pass span:hover{font-size: 3em;}
+
+    main .card:hover{
+        width: 95%;
+        box-shadow: 0px 0px 5px var(--azul);
+    }
+
+    main .card button:hover{
+        background-color: var(--azul);
+        color: var(--anil);
+    }
+}

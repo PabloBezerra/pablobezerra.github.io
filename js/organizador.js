@@ -27,10 +27,14 @@ const ciarCards = (quantidade, local) => {
 inserir();
 
 // Edita o comportamento da barra de menu conforme o scroll da tela.
-window.addEventListener('scroll', ()=>{
-    let barra = document.querySelector('#barra');
-    barra.classList.toggle('novo', window.scrollY > 60);
+let barra = document.querySelector('#barra');
+let menu = document.querySelector('#menu')
+window.addEventListener('scroll', ()=> {
+    barra.classList.toggle('novo',(window.scrollY > 60))
+    menu.classList.remove('visivel', (window.scrollY > 60))
 })
+
+
 
 // Edita o comportamento da barra de navegação das redes sociais.
 const ids = ['face', 'insta', 'twitter', 'linkedin', 'github'];

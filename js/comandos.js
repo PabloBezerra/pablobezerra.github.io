@@ -48,7 +48,6 @@ function mostrarCards(n, condição=true){
     if (condição){revelMenu()};
 }
 
-
 // Edita o comportamento do menu da barra de menu.
 const revelMenu = () => {
     let menu = document.querySelector('#menu');

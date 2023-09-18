@@ -16,9 +16,10 @@
     font-family: var(--font);
     transition: all ease-in-out .8s;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
-/* CONFIGURANDO O CORPO DA PÁGINA */
+/* CONFIGURAÇÃO DO CORPO DA PÁGINA */
 html, body{
     height: 100vh;
     width: calc(100vw - 5px) ;
@@ -30,7 +31,7 @@ html, body{
     flex-direction: column;
 }
 
-/* CONFIGURANDO O CABEÇALHO E O MENU DE NAVEGAÇÃO */
+/* CONFIGURAÇÃO DO CABEÇALHO E O MENU DE NAVEGAÇÃO */
 header{
     width: 90%;
     height: 0px;
@@ -75,12 +76,7 @@ header .visivel{
     position: relative;
     z-index: 999;
 }
-header li{
-    padding: 10px 0px;
-}
-header li:hover{
-    background-color: #161a29;
-}
+header li{padding: 10px 0px;}
 header a{
     width: 100%;
     height: 100%;
@@ -88,16 +84,13 @@ header a{
     text-decoration: none;
     font-size: 1.4em;
 }
-header a:hover{
-    color: var(--azul);
-}
 
-/* CONFIGURANDO O CORPO DO SITE */
+/* CONFIGURAÇÃO DO CORPO DO SITE */
 main {
     width: 90%;
     height: auto;
 }
-/* Configurando o bloco início */
+/* Configuração do bloco início */
 main #inicio{
     width: 100%;
     height: 90vh;
@@ -106,7 +99,6 @@ main #inicio{
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -139,7 +131,6 @@ main #inicio #icones{
 main #inicio #icones ul{
     width: 100%;
     list-style: none;
-
     display: flex;
     justify-content: space-around;
 }
@@ -147,7 +138,7 @@ main #inicio #icones li img{
     width: 50px;
     border-radius: 50%;
 }
-/* Configurando o bloco Sobre mim */
+/* Configuração do bloco Sobre mim */
 main > h2{
     color: var(--azul);
     text-align: center;
@@ -227,9 +218,7 @@ main #habilidades em{
     color: var(--azul);
     font-weight: bold;
 }
-main #habilidades img{
-    width: 100px;
-}
+main #habilidades img{ width: 100px;}
 main #habilidades .pass{
     width: 100%;
     padding: 0%;
@@ -249,11 +238,8 @@ main #habilidades .pass span{
     position: relative;
     left: 5px;
 }
-main #habilidades .pass span:hover{
-    font-size: 3em;
-}
 
-/* Configurando o bloco Projetos */
+/* Configuração do bloco Projetos */
 main .container{
     width: 100%;
     height: auto;
@@ -261,7 +247,6 @@ main .container{
     background-size: auto;
     border-radius: 8px;
     margin-top: 10px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,15 +269,9 @@ main .container #agrupar{
     margin: 10px 0px;
     text-shadow: 0px 0px 5px black;
 }
-main .container #agrupar h2{
-    text-transform: uppercase;
-}
-main .container #agrupar span{
-    font-size: 1.8em;
-}
-main .container #agrupar .rot{
-    transform: rotate(-180deg);
-}
+main .container #agrupar h2{ text-transform: uppercase;}
+main .container #agrupar span{ font-size: 1.8em;}
+main .container #agrupar .rot{ transform: rotate(-180deg);}
 main .album{
     width: 100%;
     height: 0;
@@ -310,22 +289,16 @@ main .revelar{
     align-items: center;
 }
 main .card {
-    width: 80%;
+    width: 85%;
     margin: 5px 0px;
     background-color: #171a26cb;
     border-radius: 10px;
-}
-main .card:hover{
-    width: 95%;
-    box-shadow: 0px 0px 5px var(--azul);
 }
 main .card img{
     width: 100%;
     border-radius: 10px 10px 0px 0px ;
 }
-main .card #info{
-    padding: 10px;
-}
+main .card #info{padding: 10px;}
 main .card h3, main .card p{
     color: var(--branco);
     margin-bottom: 10px;
@@ -339,12 +312,8 @@ main .card button{
     border: none;
     padding: 8px;
 }
-main .card button:hover{
-    background-color: var(--azul);
-    color: var(--anil);
-}
 
-/* Configurando o rodapé da página */
+/* CONFIGURAÇÃO DO RODAPÉ DA PÁGINA */
 footer{
     margin-top: 50px;
     width: 100%;
@@ -417,7 +386,6 @@ footer p{
     font-weight: bold;
     color: var(--anil);
 }
-
 
 /* Configurações extras*/
 ::-webkit-scrollbar {
