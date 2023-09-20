@@ -157,11 +157,11 @@ main #carreira p{
 }
 main #carreira  abbr {
     margin: 20px 0px;
-    font-weight: bold;
     background-color: var(--azul);
     padding: 5px;
     text-decoration: none;
     border-radius: 10px;
+    font-weight: bold;
 }
 main #carreira abbr a{
     text-decoration: none;
@@ -180,6 +180,7 @@ main #habilidades h3, main #carreira h3{
     color: var(--azul);
     font-size: 1.5em;
     flex-basis: 100%;
+    text-transform: uppercase ;
 }
 main #habilidades .carrossel{
     width: 100%;
@@ -291,7 +292,7 @@ main .revelar{
 main .card {
     width: 85%;
     margin: 5px 0px;
-    background-color: #171a26cb;
+    background-color: #171a26d5;
     border-radius: 10px;
 }
 main .card img{
@@ -384,6 +385,10 @@ footer p{
     text-align: center;
     margin: 20px 0;
     font-weight: bold;
+    color: var(--anil);
+}
+footer > a{
+    text-align: center;  
     color: var(--anil);
 }
 
