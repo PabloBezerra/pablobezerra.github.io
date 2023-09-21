@@ -368,6 +368,9 @@ footer form input{
     border: none;
     border-radius: 5px;
 }
+footer form input:focus{
+    outline-color: var(--azul);
+}
 footer form textarea{
     background-color: var(--anil);
     color: var(--branco);
@@ -375,6 +378,9 @@ footer form textarea{
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
+    resize: none;
+}footer form textarea:focus{
+    outline-color:var(--azul);
 }
 footer form #botao{
     width: 100px;
