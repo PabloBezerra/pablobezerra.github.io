@@ -37,6 +37,10 @@
         font-size: 1.5em;
     }
 
+    main #habilidades .pass{
+        color: rgba(255, 255, 255, 0.568);
+    }
+
     main .Games{
         background: var(--anil) url(../arquivos/fundos/600-768px/fundo_games.jpg)center  no-repeat fixed;
     }

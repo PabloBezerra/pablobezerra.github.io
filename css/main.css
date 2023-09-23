@@ -299,7 +299,12 @@ main .card img{
     width: 100%;
     border-radius: 10px 10px 0px 0px ;
 }
-main .card #info{padding: 10px;}
+main .card #info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 main .card h3, main .card p{
     color: var(--branco);
     margin-bottom: 10px;
@@ -312,6 +317,7 @@ main .card button{
     border-radius: 5px;
     border: none;
     padding: 8px;
+    margin-top: 5px;
 }
 
 /* CONFIGURAÇÃO DO RODAPÉ DA PÁGINA */

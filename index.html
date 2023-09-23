@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <!--Links e Configurações padrão da página-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pablo Bezerra</title>
+        <title>Portifólio</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/media600-768.css" media="screen" type="text/css">
         <link rel="stylesheet" href="css/media768-992.css" media="screen" type="text/css">
@@ -15,10 +16,12 @@
         <script defer src="js/organizador.js"></script>
 </head>
 <body>
-    <header id="barra">
+    <!-- Construção do corpo da página -->
+    <header id="barra"> <!-- Construção do cabeçalho e da barra de menu -->
         <h1>PABLO BEZERRA</h1>
         <span onclick="revelMenu()" class="material-symbols-outlined">menu</span>
-        <nav id="menu">
+
+        <nav id="menu"> <!-- Nagevação pela página -->
             <ul>
                 <li><a onclick="revelMenu()" href="#inicio" target="_self">Início</a></li>
                 <li><a onclick="revelMenu()" href="#carreira" target="_self">Carreira</a></li>
@@ -28,16 +31,21 @@
                 <li><a onclick="mostrarCards(3)" href="#extras" target="_self">Extras</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
+        <!-- Construção do Conteúdo principal da página -->
         <section id="inicio">
+
             <div>
                 <h1>Pablo Bezerra</h1>
                 <p>desenvolvedor front-end<br> desenvolvedor de aplicativos</p>
             </div>
+
             <img id="perfil" src="/arquivos/imagens/eu.jpg" alt="imagem de perfil de Pablo Bezerra">
             <h2></h2>
-            <nav id="icones">
+
+            <nav id="icones"> <!--  -->
                 <ul>
                     <li><a href="https://www.facebook.com/pablo.dasilva.505" target="_blank"><img id="face" src="./arquivos/icones/icon_face.png" alt="Perfil no facebook"></a></li>
                     <li><a href="https://www.instagram.com/pablobezerras/" target="_blank"> <img id="insta" src="./arquivos/icones/icon_insta.png" alt="perfil no instagram"></a></li>
@@ -46,6 +54,7 @@
                     <li><a href="https://github.com/PabloBezerra" target="_blank"><img id="github" src="./arquivos/icones/icon_github.png" alt="perfil no github"></a></li>
                 </ul>
             </nav>
+
         </section>
         <h2 id="titulo" class="blink-2"> Sobre Mim</h2>
         <section id="carreira" class="container">
@@ -112,6 +121,17 @@
                 <span id="iBusiness" class="material-symbols-outlined">expand_more</span>
             </div>
             <div id="Businessalbum" class="album">
+                <div class="card">
+                    <div>
+                        <img src="./arquivos/imagens/projeto_cartaoInterativo.jpg" alt="Projeto jogo da velha">
+                    </div>
+                    <div id="info">
+                        <h3>Cartão Interativo</h3>
+                        <p>Desafio do Frontend Mentor de cartão de crédido interativo.</p>
+                        <a href="https://pablobezerra.github.io/Cartao_interativo/" target="_blank"><button>Visitar</button></a>
+                        <a href="https://github.com/PabloBezerra/Cartao_interativo" target="_blank"><button>Ver Código</button></a>
+                    </div>
+                </div>
 
             </div>
         </section>
