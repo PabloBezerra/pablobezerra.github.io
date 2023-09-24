@@ -33,9 +33,17 @@
         </nav>
 
     </header>
+
+    <section class="animacao"> <!-- Fundo animado -->
+        <div class="triangulos">
+            <span style="--i:10"></span>
+        </div>
+    </section>
+
+    <!-- Construção do Conteúdo principal da página -->
     <main>
-        <!-- Construção do Conteúdo principal da página -->
-        <section id="inicio">
+
+        <section id="inicio" > <!-- Construção da area de apresentação do site -->
 
             <div>
                 <h1>Pablo Bezerra</h1>
@@ -45,7 +53,7 @@
             <img id="perfil" src="/arquivos/imagens/eu.jpg" alt="imagem de perfil de Pablo Bezerra">
             <h2></h2>
 
-            <nav id="icones"> <!--  -->
+            <nav id="icones"> <!-- Navegação de link de redes sociais -->
                 <ul>
                     <li><a href="https://www.facebook.com/pablo.dasilva.505" target="_blank"><img id="face" src="./arquivos/icones/icon_face.png" alt="Perfil no facebook"></a></li>
                     <li><a href="https://www.instagram.com/pablobezerras/" target="_blank"> <img id="insta" src="./arquivos/icones/icon_insta.png" alt="perfil no instagram"></a></li>
@@ -56,16 +64,19 @@
             </nav>
 
         </section>
-        <h2 id="titulo" class="blink-2"> Sobre Mim</h2>
-        <section id="carreira" class="container">
+
+        <h2 id="titulo" class="titulo_borrado"> Sobre Mim</h2>
+
+        <section id="carreira" class="container">  <!-- Construção da area de informaçoes da carreira-->
             <h3>Carreira</h3><br>
             <p>Olá, me chamo Pablo da Silva Bezerra, sou formado em Licenciatura em Educação Física pela Universidade Federal de Pernambuco. Trago uma série de habilidades que enriquecem minha abordagem no mundo digital. Com experiência em manutenção e limpeza de computadores, domínio do pacote Office e um talento especial para design gráfico, estou preparado para oferecer soluções criativas e técnicas em desenvolvimento web.</p> <br>
             <p>Sou apaixonado por desafios e constantemente busco aprimorar minhas habilidades. Acredito que a diversidade de conhecimento que trago para o mundo da programação é um diferencial valioso. Meu percurso acadêmico e experiência profissional me capacitam a encarar projetos com uma abordagem abrangente e criativa. </p>
             <abbr class="pulsar" title="Dowload do Curriculo de Pablo Bzerra em PDF"><a href="./arquivos/Curriculo_Pablo_Bezerra_screen.pdf" download="Curriculo Pablo Bezerra">Download do CV</a></abbr>
         </section>
-        <section id="habilidades">
+
+        <section id="habilidades"> <!-- Cosntrução da area de habilidades -->
             <h3>Habilidades</h3>
-            <div class="carrossel">
+            <div class="carrossel"> <!-- Carrossel dos programas que trabalho -->
                 <div class="amontoado" id="hab">
                     <div>
                         <img src="./arquivos/icones/icon_python.png" alt="Python">
@@ -93,15 +104,18 @@
                     <i onclick="passar(2)"><span class="material-symbols-outlined" >arrow_forward_ios</span></i>
                 </div>
             </div>
-
         </section>
-        <h2 id="titulo" class="blink-2"> Meus Projetos </h2>
-        <section id="games" class="container Games">
+
+        <h2 id="titulo" class="titulo_borrado"> Meus Projetos </h2>
+
+        <section id="games" class="container Games"> <!-- Seção de Projetos de jogos e afins -->
             <div id="agrupar" onclick="mostrarCards(1, false)">
                 <h2> games</h2>
                 <span id="iGames" class="material-symbols-outlined">expand_more</span>
             </div>
-            <div id="Gamesalbum" class="album">
+
+            <div id="Gamesalbum" class="album"> <!-- Card de cada projeto feito e os que ainda estão por vir -->
+
                 <div class="card">
                     <div>
                         <img src="./arquivos/imagens/projeto_jogodavelha.jpg" alt="Projeto jogo da velha">
@@ -112,36 +126,47 @@
                         <a href="https://github.com/PabloBezerra/Primeiro-game" target="_blank"><button>Visitar</button></a>
                     </div>
                 </div>
+
             </div>
+
         </section>
 
-        <section id="business" class="container Business">
+        <section id="business" class="container Business"> <!-- Seção de projetos para empresas, comércio e afins -->
+
             <div id="agrupar" onclick="mostrarCards(2, false)">
                 <h2> business </h2>
                 <span id="iBusiness" class="material-symbols-outlined">expand_more</span>
             </div>
-            <div id="Businessalbum" class="album">
+
+            <div id="Businessalbum" class="album"> <!-- Card de cada projeto feito e os que ainda estão por vir -->
+
                 <div class="card">
                     <div>
                         <img src="./arquivos/imagens/projeto_cartaoInterativo.jpg" alt="Projeto jogo da velha">
                     </div>
                     <div id="info">
                         <h3>Cartão Interativo</h3>
-                        <p>Desafio do Frontend Mentor de cartão de crédido interativo.</p>
-                        <a href="https://pablobezerra.github.io/Cartao_interativo/" target="_blank"><button>Visitar</button></a>
-                        <a href="https://github.com/PabloBezerra/Cartao_interativo" target="_blank"><button>Ver Código</button></a>
+                        <p>Desafio do Frontend Mentor de cartão de crédito interativo.</p>
+                        <div id="links">
+                            <a href="https://pablobezerra.github.io/Cartao_interativo/" target="_blank"><button>Visitar</button></a>
+                            <a href="https://github.com/PabloBezerra/Cartao_interativo" target="_blank"><button>Ver Código</button></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
+
         </section>
 
-        <section id="extras" class="container Extras">
+        <section id="extras" class="container Extras"> <!-- Seção de projetos variados -->
+
             <div id="agrupar" onclick="mostrarCards(3, false)">
                 <h2> extras </h2>
                 <span id="iExtras" class="material-symbols-outlined">expand_more</span>
             </div>
-            <div id="Extrasalbum" class="album">
+
+            <div id="Extrasalbum" class="album"> <!-- Card de cada projeto feito e os que ainda estão por vir -->
+
                 <div class="card">
                     <div>
                         <img src="./arquivos/imagens/projeto_logoff.jpg" alt="Projeto jogo da velha">
@@ -152,13 +177,17 @@
                         <a href="https://github.com/PabloBezerra/logoff" target="_blank"><button>Visitar</button></a>
                     </div>
                 </div>
+
             </div>
             
         </section>
 
     </main>
-    <footer id="footer">
-        <div id="agrupar2">
+
+    <!-- Construção do rodapé da página-->
+    <footer id="footer"> 
+
+        <div id="agrupar2"> <!-- Contatos e redes sociais finais -->
             <h4>Contate me</h4>
             <nav id="icones">
                 <ul>
@@ -172,11 +201,10 @@
         </div>
 
         <hr>
-        <h4>Me mande uma mensagem!</h4>
+        <h4>Me mande uma mensagem!</h4> <!-- Contato via e-mail -->
         <form action="https://api.staticforms.xyz/submit" method="post">
             <input type="hidden" name="accessKey" value="3a82d9fb-4007-4f06-b9a3-1e88ab43646a">
             <input type="hidden" name="redirectTo" value="pablobezerra.github.io#footer">
-
             <label for="inome"> Seu Nome</label>
             <input type="text" name="name" id="inome" placeholder="Ex. José dos Santos" autocomplete="name" minlength="3" required>
             <label for="iemail"> Seu Email</label>
@@ -188,7 +216,8 @@
         </form>
         <hr>
         <p>&copy; Pablo Bezerra</p>
-        <a href="https://github.com/PabloBezerra/pablobezerra.github.io" target="_blank"> Código desse portifólio</a>
+
     </footer>
+    <!-- Fim do Documento -->
 </body>
 </html>

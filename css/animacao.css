@@ -1,31 +1,84 @@
 @media screen and (min-width:600px) {
 
-    header a:hover{color: var(--azul);}
+    /* Animação de hover do menu */
+    header ul:hover a{
+        opacity: 0.3;
+    }
+    header ul a::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid var(--azul);
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .2s;
+    }
+    header ul a:hover{
+        opacity: 1;
+    }
+    header ul a:hover::before{
+        transform-origin:left;
+        transform: scaleX(1);
+        transition: transform .2s;
+    }
 
+    /* Animação do botão do curriculo */
     main .pulsar{
 	    animation: pulsar 3s ease-in-out infinite both;
     }
     
+    /* Animação dos passadores das habilidades*/
     main #habilidades .pass span:hover{
         font-size: 3em;
         color: var(--branco);
     }
 
+    /* Animação dos cards dos projetos*/
     main .card:hover{
         box-shadow: 0px 0px 5px var(--azul);
         background-color: var(--anil);
     }
-
     main .card button:hover{
         background-color: var(--azul);
         color: var(--anil);
     }
-    
     main .card:hover #info{
         height: 170px;
     }
+
+    /* Animação do fundo do site */
+    .animacao{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+    .animacao .triangulos{
+        position: absolute;
+        display: flex;
+    }
+    .animacao .triangulos span{
+        width: 0px;
+        height: 0px;
+        filter: blur(1.5px);
+        border-bottom: 30px solid var(--azul);
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        transform-origin: bottom;
+        animation: animar_triangulos calc(200s / var(--i)) linear infinite;
+        z-index: -1;
+    }
+    main, footer{
+        z-index: 2;
+    }
+
+    footer form #botao:hover{
+        color: var(--anil);
+        background-color: var(--azul);
+    }
 }
 
+/* Keyframes*/
 @keyframes pulsar {
     0% {
         transform: scale(1);
@@ -36,5 +89,15 @@
     100% {
         transform: scale(1);
     }
-  }
+}
+
+@keyframes animar_triangulos {
+    0%{
+        transform: translateY(100vh) scale(0) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1) rotate(360deg);
+    }
+}
+
   

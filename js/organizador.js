@@ -8,7 +8,6 @@ const inserir = () => {
 }
 const ciarCards = (quantidade, local) => {
     for (let n = 0; n < quantidade; n++){
-
         const lugar = document.querySelector(`#${local}album`)
         let div = document.createElement("div");
         div.className = `card`;
@@ -34,8 +33,6 @@ window.addEventListener('scroll', ()=> {
     menu.classList.remove('visivel', (window.scrollY > 60))
 })
 
-
-
 // Edita o comportamento da barra de navegação das redes sociais.
 const ids = ['face', 'insta', 'twitter', 'linkedin', 'github'];
 for(let i in ids){
@@ -46,4 +43,25 @@ for(let i in ids){
     id.addEventListener('mouseout', () => {
         id.src = `./arquivos/icones/icon_${ids[i]}.png`;
     })
+}
+
+// Cria os triangulos para a animação de fundo
+const triangulo = document.querySelector('.triangulos')
+let limite = 0
+if(window.innerWidth <= 1000){
+    limite = 30
+}else if (window.innerWidth < 1200 && window.innerWidth >=1000){
+    limite = 40
+}else if (window.innerWidth >= 1200){
+    limite = 60
+}
+for(let n = 0; n <= limite; n++){
+    let span = document.createElement('span')
+    span.style = `--i:${getRandomInt(1,30)}`
+    triangulo.appendChild(span)
+}
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
 }

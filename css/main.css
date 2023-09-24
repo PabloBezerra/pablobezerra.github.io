@@ -1,3 +1,4 @@
+/* Importações e variáveis*/
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Outfit&display=swap');
 
@@ -83,6 +84,7 @@ header a{
     color: var(--branco);
     text-decoration: none;
     font-size: 1.4em;
+    position: relative;
 }
 
 /* CONFIGURAÇÃO DO CORPO DO SITE */
@@ -139,15 +141,19 @@ main #inicio #icones li img{
     border-radius: 50%;
 }
 /* Configuração do bloco Sobre mim */
-main > h2{
+main>h2{
+    width: auto;
     color: var(--azul);
     text-align: center;
     font-size: 2em;
     margin: 20px 0px;
-    z-index: 1;
+    position: relative;
+    border-top: 2px solid var(--branco);
+    border-bottom: 2px solid var(--branco);
+    box-shadow: 0px -5px 5px var(--branco) none;
 }
 main #carreira{
-    background-color: var(--anil);
+    background-color: #171a26d7;
     padding: 10px;
 }
 main #carreira p{
@@ -173,7 +179,7 @@ main #habilidades{
     margin-top: 20px;
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--anil);
+    background-color: #171a26d7;
 }
 main #habilidades h3, main #carreira h3{
     text-align: center;
@@ -328,7 +334,7 @@ footer{
     padding: 20px;
 }
 footer #icones{
-    width: 40%;
+    width: 200px;
     height: auto;
     margin: 20px 0 ;
 }

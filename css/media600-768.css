@@ -1,76 +1,68 @@
 @media screen and (min-width:600px) and (max-width:768px){
+
+    /* Ajustando a area de início*/
     main #inicio{
         background: var(--anil) url(../arquivos/fundos/600-768px/fundo_inicio.jpg) center scroll;
         align-items: center;
     }
-
     main #inicio h1{
         text-align: center;
     }
-
     main #inicio p{
         text-align: center;
         font-size: 1.2em;
     }
-
     main #inicio #perfil{
         max-width: 350px;
     }
-
     main #inicio #icones li img{
         width: 70px;
     }
 
+    /* Ajustando a area de carreira e habilidades*/
     main #carreira h3, main #habilidades h3{
         font-size: 1.7em;
     }
-
     main #carreira p{
         font-size: 1.5em;
     }
-
     main #carreira  abbr {
         padding: 10px;
     }
-
     main #carreira abbr a{
         font-size: 1.5em;
     }
-
     main #habilidades .pass{
         color: rgba(255, 255, 255, 0.568);
     }
 
+    /* Ajustando as gavetas dos projetos*/
     main .Games{
         background: var(--anil) url(../arquivos/fundos/600-768px/fundo_games.jpg)center  no-repeat fixed;
     }
-
     main .Business{
         background: var(--anil) url(../arquivos/fundos/600-768px/fundo_business.jpg)center no-repeat fixed;
     }
     main .Extras{
         background: var(--anil) url(../arquivos/fundos/600-768px/fundo_extras.jpg)center no-repeat fixed;
     }
-
     main section h2{
         font-size: 1.5em;
     }
 
+    /* Ajustando os cards */
     main .revelar, main .album{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
     main .revelar{
         height: 700px;
     }
-
     main .card {
         width:45%;
         flex-basis: auto;
     }
-
     main .card #info{
         display: flex;
         flex-direction: column;
