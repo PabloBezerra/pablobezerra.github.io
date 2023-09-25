@@ -26,11 +26,12 @@
     main #carreira p{
         font-size: 1.5em;
     }
-    main #carreira  abbr {
-        padding: 10px;
-    }
-    main #carreira abbr a{
-        font-size: 1.5em;
+    main #carreira a{
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 1.3em;
+        color: var(--azul);
+        font-style: normal;
     }
     main #habilidades .pass{
         color: rgba(255, 255, 255, 0.568);

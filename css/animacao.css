@@ -79,17 +79,6 @@
 }
 
 /* Keyframes*/
-@keyframes pulsar {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 @keyframes animar_triangulos {
     0%{

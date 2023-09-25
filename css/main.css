@@ -161,15 +161,12 @@ main #carreira p{
     font-size: 1.1em;
     text-align: justify;
 }
-main #carreira  abbr {
+main #carreira a{
     margin: 20px 0px;
     background-color: var(--azul);
     padding: 5px;
-    text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-}
-main #carreira abbr a{
     text-decoration: none;
     color: var(--anil);
     font-style: normal;
