@@ -75,7 +75,6 @@ header .visivel{
     overflow:auto;
     visibility: visible;
     position: relative;
-    z-index: 999;
 }
 header li{padding: 10px 0px;}
 header a{
@@ -167,9 +166,13 @@ main #carreira a{
     padding: 5px;
     border-radius: 10px;
     font-weight: bold;
+    text-align: center;
     text-decoration: none;
     color: var(--anil);
     font-style: normal;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
 
 main #habilidades{
@@ -292,6 +295,15 @@ main .revelar{
     flex-direction: column;
     align-items: center;
 }
+main .container>p{
+    color: var(--branco);
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 5px black;
+    margin: 5px 0px;
+
+}
 main .card {
     width: 85%;
     margin: 5px 0px;
@@ -313,14 +325,16 @@ main .card h3, main .card p{
     margin-bottom: 10px;
 }
 main .card button{
-    background-color: var(--anil);
-    color: var(--azul);
+    background-color: var(--azul);
+    color: var(--anil);
     font-weight: bold;
     font-size: 1em;
     border-radius: 5px;
     border: none;
     padding: 8px;
     margin-top: 5px;
+    overflow: hidden;
+    position: relative;
 }
 
 /* CONFIGURAÇÃO DO RODAPÉ DA PÁGINA */
@@ -395,6 +409,9 @@ footer form #botao{
     width: 100px;
     font-size: 1em;
     margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
 footer p{
     text-align: center;

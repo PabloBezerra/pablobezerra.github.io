@@ -25,12 +25,27 @@ const ciarCards = (quantidade, local) => {
 }
 inserir();
 
+// Configurações personalizado para cada tamanho de tela
+let limite = 0
+let altura = 0
+if(window.innerWidth <= 767){
+    limite = 25
+    altura = 60
+}else if (window.innerWidth >=767 && window.innerWidth < 992){
+    limite = 40
+    altura = 250
+}else if (window.innerWidth >= 992){
+    limite = 60
+    altura = 250
+}
+
 // Edita o comportamento da barra de menu conforme o scroll da tela.
 let barra = document.querySelector('#barra');
 let menu = document.querySelector('#menu')
+
 window.addEventListener('scroll', ()=> {
-    barra.classList.toggle('novo',(window.scrollY > 60))
-    menu.classList.remove('visivel', (window.scrollY > 60))
+    barra.classList.toggle('novo',(window.scrollY > altura))
+    menu.classList.remove('visivel', (window.scrollY > altura))
 })
 
 // Edita o comportamento da barra de navegação das redes sociais.
@@ -47,14 +62,7 @@ for(let i in ids){
 
 // Cria os triangulos para a animação de fundo
 const triangulo = document.querySelector('.triangulos')
-let limite = 0
-if(window.innerWidth <= 1000){
-    limite = 30
-}else if (window.innerWidth < 1200 && window.innerWidth >=1000){
-    limite = 40
-}else if (window.innerWidth >= 1200){
-    limite = 60
-}
+
 for(let n = 0; n <= limite; n++){
     let span = document.createElement('span')
     span.style = `--i:${getRandomInt(1,30)}`

@@ -1,4 +1,4 @@
-@media screen and (min-width:600px) and (max-width:768px){
+@media screen and (min-width:600px) and (max-width:767px){
 
     /* Ajustando a area de início*/
     main #inicio{
@@ -21,7 +21,7 @@
 
     /* Ajustando a area de carreira e habilidades*/
     main #carreira h3, main #habilidades h3{
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
     main #carreira p{
         font-size: 1.5em;
@@ -70,5 +70,9 @@
         height: 45px;
         overflow: hidden;
         justify-content:space-between;
+    }
+    main .card button{
+        background-color: var(--anil);
+        color: var(--azul);
     }
 }

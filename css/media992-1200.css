@@ -1,5 +1,121 @@
 @media screen and (min-width:992px) and (max-width:1200px){
-    main{
-        background-color: blue;
+
+    /* Ajustando a barra de navegação */
+    header{
+        flex-direction: row;
+        align-items: center;
+    }
+    .novo{
+        overflow: auto;
+    }
+    header>span{
+        visibility: hidden;
+    }
+    header #menu{
+        height: 100%;
+        visibility: visible;
+        flex-basis: auto;
+        padding: 0;
+    }
+    header #menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+    header #menu ul li{
+        margin: 0 5px;
+        padding: 5px 0;
+        font-size: 1em;
+    }
+    header .visivel{
+        overflow: hidden;
+    }
+    
+    /* Ajustando a area de início*/
+    main #inicio{
+        background: var(--anil) url(../arquivos/fundos/992-1200px/fundo_inicio.JPG) center no-repeat;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    main #inicio div{
+        width:450px;
+    }
+    main #inicio div h1{
+        font-size: 2.9em;
+    }
+    main #inicio div p{
+        font-size: 1.5em;
+    }
+    main #inicio #icones {
+        height: auto;
+        width:400px;
+        left: -10px;
+    }
+    main #inicio #perfil{
+        order: 4;
+        flex-basis: 50%;
+        max-width: 350px;
+    }
+
+    /* Ajustando a area de carreira e habilidades*/
+    main #carreira h3, main #habilidades h3{
+        font-size: 1.6em;
+    }
+    main #carreira p{
+        font-size: 1.5em;
+    }
+    main #carreira a{
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 1.3em;
+        color: var(--azul);
+        font-style: normal;
+    }
+    main #habilidades .pass{
+        color: rgba(255, 255, 255, 0.568);
+    }
+
+    /* Ajustando as gavetas dos projetos*/
+    main .Games{
+        background: var(--anil) url(../arquivos/fundos/992-1200px/fundo_games.JPG)center  no-repeat fixed;
+    }
+    main .Business{
+        background: var(--anil) url(../arquivos/fundos/992-1200px/fundo_business.JPG)center no-repeat fixed;
+    }
+    main .Extras{
+        background: var(--anil) url(../arquivos/fundos/992-1200px/fundo_extras.JPG)center no-repeat fixed;
+    }
+
+    /* Ajustando os cards */
+    main .revelar, main .album{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main .revelar{
+        height: 500px;
+    }
+    main .card {
+        width:30%;
+        flex-basis: auto;
+    }
+    main .card #info{
+        display: flex;
+        flex-direction: column;
+        height: 45px;
+        overflow: hidden;
+        justify-content:space-between;
+    }
+    main .card button{
+        background-color: var(--anil);
+        color: var(--azul);
+    }
+
+    footer>form{
+        max-width: 1000px;
     }
 }

@@ -24,9 +24,26 @@
     }
 
     /* Animação do botão do curriculo */
-    main .pulsar{
-	    animation: pulsar 3s ease-in-out infinite both;
+    main #carreira a:hover{
+        color: var(--anil);
+        text-decoration: none;
+        z-index: 1;
     }
+    main #carreira a::before{
+        content: '';
+        width: 110%;
+        height: 100%;
+        background-color: transparent;
+        left: -5px;
+        position: absolute;
+        z-index: -1;
+        transform: scaleY(0.1) translate(-10px, 81px);
+        transition: transform 0.5s ease-in-out;
+    }
+    main #carreira a:hover::before{
+        background-color: var(--azul);
+        transform: scaleY(1.2);
+    } 
     
     /* Animação dos passadores das habilidades*/
     main #habilidades .pass span:hover{
@@ -39,14 +56,14 @@
         box-shadow: 0px 0px 5px var(--azul);
         background-color: var(--anil);
     }
-    main .card button:hover{
-        background-color: var(--azul);
-        color: var(--anil);
-    }
     main .card:hover #info{
         height: 170px;
     }
-
+    main .card button:hover{
+        color: var(--anil);
+        background-color: var(--azul);
+    }
+    
     /* Animação do fundo do site */
     .animacao{
         position: fixed;

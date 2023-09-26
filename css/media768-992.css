@@ -1,5 +1,79 @@
 @media screen and (min-width:768px) and (max-width:992px){
-    main{
-        background-color: brown;
+
+    /* Ajustando a area de início*/
+    main #inicio{
+        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_inicio.JPG) center no-repeat;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    main #inicio div{
+        width:300px;
+    }
+    main #inicio #icones {
+        height: auto;
+        width:300px;
+    }
+    main #inicio #perfil{
+        order: 4;
+        flex-basis: 50%;
+    }
+
+    /* Ajustando a area de carreira e habilidades*/
+    main #carreira h3, main #habilidades h3{
+        font-size: 1.6em;
+    }
+    main #carreira p{
+        font-size: 1.5em;
+    }
+    main #carreira a{
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 1.3em;
+        color: var(--azul);
+        font-style: normal;
+    }
+    main #habilidades .pass{
+        color: rgba(255, 255, 255, 0.568);
+    }
+    
+    /* Ajustando as gavetas dos projetos*/
+    main .Games{
+        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_games.JPG)center  no-repeat fixed;
+    }
+    main .Business{
+        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_business.JPG)center no-repeat fixed;
+    }
+    main .Extras{
+        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_extras.JPG)center no-repeat fixed;
+    }
+
+    /* Ajustando os cards */
+    main .revelar, main .album{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main .revelar{
+        height: 700px;
+    }
+    main .card {
+        width:45%;
+        flex-basis: auto;
+    }
+    main .card #info{
+        display: flex;
+        flex-direction: column;
+        height: 45px;
+        overflow: hidden;
+        justify-content:space-between;
+    }
+    main .card button{
+        background-color: var(--anil);
+        color: var(--azul);
     }
 }
