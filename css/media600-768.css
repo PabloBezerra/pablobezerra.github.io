@@ -23,8 +23,21 @@
     main #carreira h3, main #habilidades h3{
         font-size: 1.6em;
     }
+    main #carreira article{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main #carreira article img{
+        max-width: 180px;
+        flex-basis: 50%;
+    }
+    main #carreira article #programa{
+        order: 0;
+    }
     main #carreira p{
         font-size: 1.5em;
+        flex-basis: 100%;
     }
     main #carreira a{
         background-color: transparent;
@@ -34,7 +47,7 @@
         font-style: normal;
     }
     main #habilidades .pass{
-        color: rgba(255, 255, 255, 0.568);
+        opacity: 0.3;
     }
 
     /* Ajustando as gavetas dos projetos*/

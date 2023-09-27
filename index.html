@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
+    <link rel="shortcut icon" href="arquivos/icones/P.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/media600-768.css" media="screen" type="text/css">
     <link rel="stylesheet" href="css/media768-992.css" media="screen" type="text/css">
@@ -94,7 +95,6 @@
             </div>
 
             <img id="perfil" src="/arquivos/imagens/eu.jpg" alt="imagem de perfil de Pablo Bezerra">
-            <h2></h2>
 
             <nav id="icones"> <!-- Navegação de link de redes sociais -->
                 <ul>
@@ -108,12 +108,16 @@
 
         </section>
 
-        <h2 id="titulo" class="titulo_borrado"> Sobre Mim</h2>
+        <h2 id="titulo"> Carreira </h2>
 
         <section id="carreira" class="container">  <!-- Construção da area de informaçoes da carreira-->
-            <h3>Carreira</h3><br>
-            <p>Olá, me chamo Pablo da Silva Bezerra, sou formado em Licenciatura em Educação Física pela Universidade Federal de Pernambuco. Trago uma série de habilidades que enriquecem minha abordagem no mundo digital. Com experiência em manutenção e limpeza de computadores, domínio do pacote Office e um talento especial para design gráfico, estou preparado para oferecer soluções criativas e técnicas em desenvolvimento web.</p> <br>
-            <p>Sou apaixonado por desafios e constantemente busco aprimorar minhas habilidades. Acredito que a diversidade de conhecimento que trago para o mundo da programação é um diferencial valioso. Meu percurso acadêmico e experiência profissional me capacitam a encarar projetos com uma abordagem abrangente e criativa. </p>
+            <h3>Sobre mim</h3><br>
+            <article>
+                <p>Olá, me chamo Pablo da Silva Bezerra, sou formado em Licenciatura em Educação Física pela Universidade Federal de Pernambuco. Trago uma série de habilidades que enriquecem minha abordagem no mundo digital. Com experiência em manutenção e limpeza de computadores, domínio do pacote Office e um talento especial para design gráfico, estou preparado para oferecer soluções criativas e técnicas em desenvolvimento web.</p>
+                <img src="/arquivos/imagens/programador.png" alt="Figurinha de um programador" id="programador">
+                <img src="/arquivos/imagens/programa.png" alt="figurinha de um programa" id="programa">
+                <p>Sou apaixonado por desafios e constantemente busco aprimorar minhas habilidades. Acredito que a diversidade de conhecimento que trago para o mundo da programação é um diferencial valioso. Meu percurso acadêmico e experiência profissional me capacitam a encarar projetos com uma abordagem abrangente e criativa. </p>
+            </article>
             <a class="botao" href="./arquivos/Curriculo_Pablo_Bezerra_screen.pdf" download="Curriculo Pablo Bezerra"> Download do CV </a>
         </section>
 
@@ -149,7 +153,7 @@
             </div>
         </section>
 
-        <h2 id="titulo" class="titulo_borrado"> Meus Projetos </h2>
+        <h2 id="titulo"> Meus Projetos </h2>
 
         <section id="games" class="container Games"> <!-- Seção de Projetos de jogos e afins -->
             <div id="agrupar" onclick="mostrarCards(1, false)">
@@ -247,9 +251,8 @@
 
         <hr>
         <h4>Me mande uma mensagem!</h4> <!-- Contato via e-mail -->
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="3a82d9fb-4007-4f06-b9a3-1e88ab43646a">
-            <input type="hidden" name="redirectTo" value="pablobezerra.github.io#footer">
+        <form action="https://formsubmit.co/pdsbezerra1316@gmail.com" method="POST" >
+            <input type="hidden" name="_next" value="htpps://pablobezerra.github.io#footer">
             <label for="inome"> Seu Nome</label>
             <input type="text" name="name" id="inome" placeholder="Ex. José dos Santos" autocomplete="name" minlength="3" required>
             <label for="iemail"> Seu Email</label>

@@ -1,4 +1,4 @@
-@media screen and (min-width:992px) and (max-width:1200px){
+@media screen and (min-width:993px) and (max-width:1200px){
 
     /* Ajustando a barra de navegação */
     header{
@@ -40,9 +40,11 @@
         justify-content: center;
         align-items: center;
         justify-items: center;
+        padding-left: 30px;
     }
     main #inicio div{
         width:450px;
+        align-self: flex-start;
     }
     main #inicio div h1{
         font-size: 2.9em;
@@ -53,7 +55,7 @@
     main #inicio #icones {
         height: auto;
         width:400px;
-        left: -10px;
+        align-self: flex-start;
     }
     main #inicio #perfil{
         order: 4;
@@ -65,8 +67,25 @@
     main #carreira h3, main #habilidades h3{
         font-size: 1.6em;
     }
-    main #carreira p{
-        font-size: 1.5em;
+    main #carreira article{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main #carreira article img{
+        max-width: 300px ;
+    }
+    main #carreira article #programador{
+        order: -1;
+    }
+    main #carreira article p{
+        font-size: 1.3em;
+        text-align: left;
+        width:720px;
+        flex-basis: auto;
     }
     main #carreira a{
         background-color: transparent;
@@ -115,6 +134,7 @@
         color: var(--azul);
     }
 
+    /* Ajustando fomrulário do footer */
     footer>form{
         max-width: 1000px;
     }

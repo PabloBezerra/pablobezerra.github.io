@@ -153,9 +153,25 @@ main>h2{
 }
 main #carreira{
     background-color: #171a26d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 }
-main #carreira p{
+main #carreira article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main #carreira article img{
+    width: 150px;
+    margin: 5px 0;
+}
+main #carreira article #programa{
+    order: 3;
+}
+main #carreira article p{
     color: white;
     font-size: 1.1em;
     text-align: justify;
