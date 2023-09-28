@@ -251,18 +251,23 @@
 
         <hr>
         <h4>Me mande uma mensagem!</h4> <!-- Contato via e-mail -->
-        <form action="https://formsubmit.co/pdsbezerra1316@gmail.com" method="POST" >
-            <input type="hidden" name="_next" value="htpps://pablobezerra.github.io#footer">
+        <form action="https://formsubmit.co/ajax/pdsbezerra1316@gmail.com" method="POST" id="form">
+            <input type="hidden" name="_next" value="http://pablobezerra.github.io/enviado.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
             <label for="inome"> Seu Nome</label>
-            <input type="text" name="name" id="inome" placeholder="Ex. José dos Santos" autocomplete="name" minlength="3" required>
+            <input type="text" name="nome" id="inome" class="required" placeholder="Ex. José dos Santos" autocomplete="name" minlength="3" oninput="validarNome()" required>
+            <p class="p_required"> Insira um nome válido e com no mínimo 3 caracteres </p>
             <label for="iemail"> Seu Email</label>
-            <input type="email" name="email" id="iemal" placeholder="example.@email.com" autocomplete="email" required>
+            <input type="email" name="email" id="iemail" class="required" placeholder="example.@email.com" autocomplete="email" oninput="validarEmail()" required>
+            <p class="p_required"> Insira um e-mail válido </p>
             <label for="imensagem"> Sua Mensagem</label>
-            <textarea name="message" id="imensagem" cols="30" rows="10" required></textarea>
-            <input type="submit" value="Enviar" id="botao" class="botao">
-
+            <textarea name="menssagem" id="imensagem" class="required" cols="30" rows="10" oninput="validarMensagem()" required></textarea>
+            <p class="p_required"> Preencha esse campo com no mínimo 5 caracteres </p>
+            <input type="submit" value="Enviar" id="botao" class="botao" disabled>
         </form>
         <hr>
+        <!-- https://formsubmit.co/ajax/pdsbezerra1316@gmail.com -->
         <p>&copy; Pablo Bezerra</p>
 
     </footer>

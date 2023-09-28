@@ -405,21 +405,23 @@ footer form input{
     background-color: var(--anil);
     color: var(--branco);
     border: none;
+    outline: none;
     border-radius: 5px;
 }
 footer form input:focus{
-    outline-color: var(--azul);
+    border: 2px solid var(--azul);
 }
 footer form textarea{
     background-color: var(--anil);
     color: var(--branco);
     padding: 5px;
     border: none;
+    outline: none;
     border-radius: 5px;
     margin-bottom: 10px;
-    resize: none;
+    resize: vertical;
 }footer form textarea:focus{
-    outline-color:var(--azul);
+    border: 2px solid var(--azul)
 }
 footer form #botao{
     width: 100px;
@@ -429,15 +431,19 @@ footer form #botao{
     position: relative;
     cursor: pointer;
 }
+footer form #botao:disabled{
+    filter: opacity(50%);
+}
 footer p{
     text-align: center;
     margin: 20px 0;
     font-weight: bold;
     color: var(--anil);
 }
-footer > a{
-    text-align: center;  
-    color: var(--anil);
+footer .p_required{
+    color: darkred;
+    margin: 5px 0;
+    display: none;
 }
 
 /* Configurações extras*/

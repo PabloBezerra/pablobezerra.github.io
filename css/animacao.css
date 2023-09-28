@@ -93,6 +93,9 @@
         color: var(--anil);
         background-color: var(--azul);
     }
+    footer form #botao:disabled{
+        background-color: gray;
+    }
 }
 
 /* Keyframes*/

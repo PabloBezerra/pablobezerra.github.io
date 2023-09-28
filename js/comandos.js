@@ -78,4 +78,61 @@ function passar(n) {
     }
     carrossel(false);
 }
-let atualizador = setInterval(carrossel, 10000);
+let atualizador = setInterval(carrossel, 10000); 
+
+// configurando o envio da mensagem do formulário
+const form = document.querySelector("#form")
+const inputs = form.querySelectorAll('.required')
+const p = form.querySelectorAll('.p_required')
+let nome, email, mensagem = false
+
+function inserirErro(n){
+  inputs[n].style.border = '2px solid darkred'
+  p[n].style.display = 'block'
+}
+
+function removerErro(n){
+  inputs[n].style.border = ''
+  p[n].style.display = 'none'
+}
+
+function validarNome(){
+  if(inputs[0].value.length <= 3 || /\d/.test(inputs[0].value)){
+    inserirErro(0)
+    nome  = false
+  }else{
+    removerErro(0)
+    nome = true
+  }
+  ativarBotao()
+}
+
+function validarEmail(){
+  if( !/\S+@\S+\.\S+/.test(inputs[1].value)){
+    inserirErro(1)
+    email = false
+  }else{
+    removerErro(1)
+    email = true
+  }
+  ativarBotao()
+}
+
+function validarMensagem(){
+  if (inputs[2].value.length <= 5){
+    inserirErro(2)
+    mensagem = false
+  }else{
+    removerErro(2)
+    mensagem = true
+  }
+  ativarBotao()
+}
+
+function ativarBotao(){
+  if(nome && email && mensagem){
+    botao.disabled = false
+  }else{
+    botao.disabled = true
+  }
+}
