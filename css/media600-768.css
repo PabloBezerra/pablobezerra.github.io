@@ -1,0 +1,91 @@
+@media screen and (min-width:600px) and (max-width:767px){
+
+    /* Ajustando a area de início*/
+    main #inicio{
+        background: var(--anil) url(../arquivos/fundos/600-768px/fundo_inicio.jpg) center scroll;
+        align-items: center;
+    }
+    main #inicio h1{
+        text-align: center;
+    }
+    main #inicio p{
+        text-align: center;
+        font-size: 1.2em;
+    }
+    main #inicio #perfil{
+        max-width: 350px;
+    }
+    main #inicio #icones li img{
+        width: 70px;
+    }
+
+    /* Ajustando a area de carreira e habilidades*/
+    main #carreira h3, main #habilidades h3{
+        font-size: 1.6em;
+    }
+    main #carreira article{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main #carreira article img{
+        max-width: 180px;
+        flex-basis: 50%;
+    }
+    main #carreira article #programa{
+        order: 0;
+    }
+    main #carreira p{
+        font-size: 1.5em;
+        flex-basis: 100%;
+    }
+    main #carreira a{
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 1.3em;
+        color: var(--azul);
+        font-style: normal;
+    }
+    main #habilidades .pass{
+        opacity: 0.3;
+    }
+
+    /* Ajustando as gavetas dos projetos*/
+    main .Games{
+        background: var(--anil) url(../arquivos/fundos/600-768px/fundo_games.jpg)center  no-repeat fixed;
+    }
+    main .Business{
+        background: var(--anil) url(../arquivos/fundos/600-768px/fundo_business.jpg)center no-repeat fixed;
+    }
+    main .Extras{
+        background: var(--anil) url(../arquivos/fundos/600-768px/fundo_extras.jpg)center no-repeat fixed;
+    }
+    main section h2{
+        font-size: 1.5em;
+    }
+
+    /* Ajustando os cards */
+    main .revelar, main .album{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main .revelar{
+        height: 700px;
+    }
+    main .card {
+        width:45%;
+        flex-basis: auto;
+    }
+    main .card #info{
+        display: flex;
+        flex-direction: column;
+        height: 45px;
+        overflow: hidden;
+        justify-content:space-between;
+    }
+    main .card button{
+        background-color: var(--anil);
+        color: var(--azul);
+    }
+}

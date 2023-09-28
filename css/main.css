@@ -1,0 +1,464 @@
+/* Importações e variáveis*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Outfit&display=swap');
+
+:root{
+    --font: 'Montserrat', Arial , sans-serif;
+    --azul: #23F0C7;
+    --branco: #ffffff;
+    --anil: #171A26;
+}   
+
+/* Reset e configurações globais*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    transition: all ease-in-out .8s;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* CONFIGURAÇÃO DO CORPO DA PÁGINA */
+html, body{
+    height: 100vh;
+    width: calc(100vw - 5px) ;
+    min-width: 350px;
+    background: linear-gradient(180deg, var(--anil) 70%, var(--azul) 100%) fixed;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CONFIGURAÇÃO DO CABEÇALHO E O MENU DE NAVEGAÇÃO */
+header{
+    width: 90%;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    padding: 5px 10px;
+    background-color: var(--anil);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;    
+}
+.novo{
+   height: 50px;
+   overflow: visible;
+   visibility: visible;
+}
+header h1{
+    color: var(--branco);
+    font-size: 1.6em;
+}
+header span{
+    color: var(--branco);
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    padding: 5px 10px;
+    flex-basis:100% ;
+    background-color: var(--anil);
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+header .visivel{
+    height: 300px;
+    overflow:auto;
+    visibility: visible;
+    position: relative;
+}
+header li{padding: 10px 0px;}
+header a{
+    width: 100%;
+    height: 100%;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.4em;
+    position: relative;
+}
+
+/* CONFIGURAÇÃO DO CORPO DO SITE */
+main {
+    width: 90%;
+    height: auto;
+}
+/* Configuração do bloco início */
+main #inicio{
+    width: 100%;
+    height: auto;
+    background: var(--anil) url(../arquivos/fundos/0-600px/fundo_inicio.jpg) center scroll;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main #inicio h1{
+    margin-top: 10px;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+main #inicio p{
+    color: var(--azul);
+    text-transform: capitalize;
+    margin-top: 10px;
+    text-shadow: 0px 0px 20px black;
+}
+main #inicio #perfil{
+    width: 80%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 50px 0;
+    align-self: center;
+    box-shadow: 0px 0px 10px var(--azul);
+}
+main #inicio #icones{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+main #inicio #icones ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+main #inicio #icones li img{
+    width: 50px;
+    border-radius: 50%;
+}
+/* Configuração do bloco Sobre mim */
+main>h2{
+    width: auto;
+    color: var(--azul);
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0px;
+    position: relative;
+    border-top: 2px solid var(--branco);
+    border-bottom: 2px solid var(--branco);
+    box-shadow: 0px -5px 5px var(--branco) none;
+}
+main #carreira{
+    background-color: #171a26d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+main #carreira article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main #carreira article img{
+    width: 150px;
+    margin: 5px 0;
+}
+main #carreira article #programa{
+    order: 3;
+}
+main #carreira article p{
+    color: white;
+    font-size: 1.1em;
+    text-align: justify;
+}
+main #carreira a{
+    margin: 20px 0px;
+    background-color: var(--azul);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--anil);
+    font-style: normal;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+main #habilidades{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #171a26d7;
+}
+main #habilidades h3, main #carreira h3{
+    text-align: center;
+    color: var(--azul);
+    font-size: 1.5em;
+    flex-basis: 100%;
+    text-transform: uppercase ;
+}
+main #habilidades .carrossel{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    overflow:hidden;
+    position: relative;
+}
+main #habilidades .amontoado{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(0);
+}
+main #habilidades div{
+    min-width: 280px;
+    height: 230px;
+    margin: 0px 5px;
+    background-color: #ffffff15;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main #habilidades p{
+    color: var(--branco);
+    text-align: center;
+    font-size: 1em;
+}
+main #habilidades em{
+    font-style: normal;
+    color: var(--azul);
+    font-weight: bold;
+}
+main #habilidades img{ width: 100px;}
+main #habilidades .pass{
+    width: 100%;
+    padding: 0%;
+    background-color: transparent;
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+}
+main #habilidades .pass span{
+    font-size: 2.5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.808);
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+}
+
+/* Configuração do bloco Projetos */
+main .container{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-size: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .Games{
+    background: var(--anil) url(../arquivos/fundos/0-600px/fundo_games.jpg)center  no-repeat fixed;
+}
+main .Business{
+    background: var(--anil) url(../arquivos/fundos/0-600px/fundo_business.jpg)center no-repeat fixed;
+}
+main .Extras{
+    background: var(--anil) url(../arquivos/fundos/0-600px/fundo_extras.jpg)center no-repeat fixed;
+}
+main .container #agrupar{
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    cursor: pointer;
+    margin: 10px 0px;
+    text-shadow: 0px 0px 5px black;
+}
+main .container #agrupar h2{ text-transform: uppercase;}
+main .container #agrupar span{ font-size: 1.8em;}
+main .container #agrupar .rot{ transform: rotate(-180deg);}
+main .album{
+    width: 100%;
+    height: 0;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .revelar{
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container>p{
+    color: var(--branco);
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 5px black;
+    margin: 5px 0px;
+
+}
+main .card {
+    width: 85%;
+    margin: 5px 0px;
+    background-color: #171a26d5;
+    border-radius: 10px;
+}
+main .card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px ;
+}
+main .card #info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main .card h3, main .card p{
+    color: var(--branco);
+    margin-bottom: 10px;
+}
+main .card button{
+    background-color: var(--azul);
+    color: var(--anil);
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* CONFIGURAÇÃO DO RODAPÉ DA PÁGINA */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    background-color: var(--branco);
+    padding: 20px;
+}
+footer #icones{
+    width: 200px;
+    height: auto;
+    margin: 20px 0 ;
+}
+footer #icones ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+footer #icones li img{
+    width: 30px;
+    border-radius: 50%;
+    filter:grayscale(100%) ;
+}
+footer #agrupar2{
+    width: calc(100vw -5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h4{
+    margin-top: 10px;
+    color: var(--anil);
+    text-align: center;
+}
+footer form{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+footer form label{
+    margin: 10px 0;
+    color: var(--anil);
+    font-weight: bold;
+}
+footer form input{
+    height: 30px;
+    padding: 5px;
+    background-color: var(--anil);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+}
+footer form input:focus{
+    outline-color: var(--azul);
+}
+footer form textarea{
+    background-color: var(--anil);
+    color: var(--branco);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}footer form textarea:focus{
+    outline-color:var(--azul);
+}
+footer form #botao{
+    width: 100px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+footer p{
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: var(--anil);
+}
+footer > a{
+    text-align: center;  
+    color: var(--anil);
+}
+
+/* Configurações extras*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, var(--anil) 70%, var(--azul) 100%);
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff85;
+    border-radius: 3px;
+}
+
+.revelar::-webkit-scrollbar {
+    width: 5px;
+}
+.revelar::-webkit-scrollbar-track {
+    background: transparent;
+} 
+.revelar::-webkit-scrollbar-thumb {
+    background-color: #ffffff85;
+    border-radius: 3px;
+}
