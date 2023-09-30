@@ -36,7 +36,7 @@
         max-width: 1400px;
     }
     main #inicio{
-        background: var(--anil) url(../arquivos/fundos/+1200px/fundo_inicio.JPG) center no-repeat;
+        background: var(--anil) url(/arquivos/fundos/+1200px/fundo_inicio.JPG) center no-repeat;
         height: 650px;
         display: flex;
         flex-direction: column;
@@ -106,13 +106,13 @@
 
     /* Ajustando as gavetas dos projetos*/
     main .Games{
-        background: var(--anil) url(../arquivos/fundos/+1200px/fundo_games.JPG)center  no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/+1200px/fundo_games.JPG)center  no-repeat fixed;
     }
     main .Business{
-        background: var(--anil) url(../arquivos/fundos/+1200px/fundo_business.JPG)center no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/+1200px/fundo_business.JPG)center no-repeat fixed;
     }
     main .Extras{
-        background: var(--anil) url(../arquivos/fundos/+1200px/fundo_extras.JPG)center no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/+1200px/fundo_extras.JPG)center no-repeat fixed;
     }
 
     /* Ajustando os cards */

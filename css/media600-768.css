@@ -2,7 +2,7 @@
 
     /* Ajustando a area de início*/
     main #inicio{
-        background: var(--anil) url(./arquivos/fundos/600-768px/fundo_inicio.jpg) center scroll;
+        background: var(--anil) url(/arquivos/fundos/600-768px/fundo_inicio.JPG) center scroll;
         align-items: center;
     }
     main #inicio h1{
@@ -52,13 +52,13 @@
 
     /* Ajustando as gavetas dos projetos*/
     main .Games{
-        background: var(--anil) url(./arquivos/fundos/600-768px/fundo_games.jpg)center  no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/600-768px/fundo_games.jpg)center  no-repeat fixed;
     }
     main .Business{
-        background: var(--anil) url(./arquivos/fundos/600-768px/fundo_business.jpg)center no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/600-768px/fundo_business.jpg)center no-repeat fixed;
     }
     main .Extras{
-        background: var(--anil) url(./arquivos/fundos/600-768px/fundo_extras.jpg)center no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/600-768px/fundo_extras.jpg)center no-repeat fixed;
     }
     main section h2{
         font-size: 1.5em;

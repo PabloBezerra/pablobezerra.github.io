@@ -2,7 +2,7 @@
 
     /* Ajustando a area de início*/
     main #inicio{
-        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_inicio.JPG) center no-repeat;
+        background: var(--anil) url(/arquivos/fundos/768-992px/fundo_inicio.JPG) center no-repeat;
         height: 500px;
         display: flex;
         flex-direction: column;
@@ -56,13 +56,13 @@
     
     /* Ajustando as gavetas dos projetos*/
     main .Games{
-        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_games.JPG)center  no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/768-992px/fundo_games.JPG)center  no-repeat fixed;
     }
     main .Business{
-        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_business.JPG)center no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/768-992px/fundo_business.JPG)center no-repeat fixed;
     }
     main .Extras{
-        background: var(--anil) url(../arquivos/fundos/768-992px/fundo_extras.JPG)center no-repeat fixed;
+        background: var(--anil) url(/arquivos/fundos/768-992px/fundo_extras.JPG)center no-repeat fixed;
     }
 
     /* Ajustando os cards */
