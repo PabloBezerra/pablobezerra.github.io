@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Outfit&display=swap');
+
+$font: 'Montserrat', Arial , sans-serif;
+$azul: #23F0C7;
+$branco: #ffffff;
+$anil: #171A26;
+
+@import 'style.scss', 'media600-768.scss', 'media768-992.scss', 'media992-1200.scss', 'media+1200.scss';
+
+/* Configurações extras*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, $anil 70%, $azul 100%);
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff85;
+    border-radius: 3px;
+}
+
+.revelar::-webkit-scrollbar {
+    width: 5px;
+}
+.revelar::-webkit-scrollbar-track {
+    background: transparent;
+} 
+.revelar::-webkit-scrollbar-thumb {
+    background-color: #ffffff85;
+    border-radius: 3px;
+}
