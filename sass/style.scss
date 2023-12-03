@@ -352,19 +352,15 @@ main {
 
         div.album{
             width: 100%;
-            height: 0;
+            height: 0px;
             overflow-y: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             &.revelar{
-                width: 100%;
                 height: 80vh;
                 overflow-y: auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 
                 div.card {
                     width: 85%;

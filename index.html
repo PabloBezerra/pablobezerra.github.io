@@ -61,16 +61,16 @@
 
     <header id="barra"> <!-- Construção do cabeçalho e da barra de menu -->
         <h1>PABLO BEZERRA</h1>
-        <span onclick="revelMenu()" class="material-symbols-outlined">menu</span>
+        <span tipo="menu" class="material-symbols-outlined">menu</span>
 
         <nav id="menu"> <!-- Nagevação pela página -->
             <ul>
-                <li><a onclick="revelMenu()" href="#inicio" target="_self">Início</a></li>
-                <li><a onclick="revelMenu()" href="#carreira" target="_self">Carreira</a></li>
-                <li><a onclick="revelMenu()" href="#habilidades" target="_self">Habilidades</a></li>
-                <li><a onclick="mostrarCards(1)" href="#games" target="_self">Games</a></li>
-                <li><a onclick="mostrarCards(2)" href="#business" target="_self">Business</a></li>
-                <li><a onclick="mostrarCards(3)" href="#extras" target="_self">Extras</a></li>
+                <li><a href="#inicio" target="_self">Início</a></li>
+                <li><a href="#carreira" target="_self">Carreira</a></li>
+                <li><a href="#habilidades" target="_self">Habilidades</a></li>
+                <li><a tipo="games" href="#games" target="_self">Games</a></li>
+                <li><a tipo="business" href="#business" target="_self">Business</a></li>
+                <li><a tipo="extras" href="#extras" target="_self">Extras</a></li>
             </ul>
         </nav>
 
@@ -122,28 +122,13 @@
         <section id="habilidades"> <!-- Cosntrução da area de habilidades -->
             <h3>Habilidades</h3>
             <div class="carrossel"> <!-- Carrossel dos programas que trabalho -->
+
                 <div class="amontoado" id="hab">
-                    <div>
-                        <img src="./arquivos/icones/icon_python.png" alt="Python">
-                        <p><em>Python</em> <br> É amplamente usada no desenvolvimento web, automação, análise de dados e muito mais.  </p>
-                    </div>
-                    <div>
-                        <img src="./arquivos/icones/icon_html.png" alt="Html">
-                        <p><em>HTML</em> <br> (Hypertext Markup Language) é a linguagem padrão para criar páginas da web</p>
-                    </div>
-                    <div>
-                        <img src="./arquivos/icones/icon_css.png" alt="Css">
-                        <p><em>CSS</em> <br> (Cascading Style Sheets),é uma linguagem poderosa para personalizar a estética das páginas web.</p>
-                    </div>
-                    <div>
-                        <img src="./arquivos/icones/icon_js.png" alt="JavaScript">
-                        <p><em>JavaScript</em> <br> É uma linguagem de programação fundamental para o desenvolvimento web</p>
-                    </div>
-                    <div>
-                        <img src="./arquivos/icones/icon_atenção.png" alt="Em formação">
-                        <p><em>Em formação:</em> <br> React, Bootstrap, NodeJs, MySQL</p>
-                    </div>
+
+                    <!-- area dos card de habilidade -->
+
                 </div>
+
                 <div class="pass">
                     <i onclick="passar(1)"><span class="material-symbols-outlined" >arrow_back_ios</span></i>
                     <i onclick="passar(2)"><span class="material-symbols-outlined" >arrow_forward_ios</span></i>
@@ -154,7 +139,7 @@
         <h2 id="titulo"> Meus Projetos </h2>
 
         <section id="games" class="container Games"> <!-- Seção de Projetos de jogos e afins -->
-            <div id="agrupar" onclick="mostrarCards(1, false)">
+            <div id="agrupar">
                 <h2> games</h2>
                 <span id="iGames" class="material-symbols-outlined">expand_more</span>
             </div>
@@ -162,23 +147,14 @@
             <p>Projetos de jogos e afins</p>
             <div id="Gamesalbum" class="album"> <!-- Card de cada projeto feito e os que ainda estão por vir -->
 
-                <div class="card">
-                    
-                    <img src="./arquivos/imagens/projeto_jogodavelha.jpg" alt="Projeto jogo da velha">
-                    
-                    <div id="info">
-                        <h3>Jogo da Velha</h3>
-                        <p>O clássico jogo da velha feito em Python com PyQty6.</p>
-                        <a class="botao" href="https://github.com/PabloBezerra/Primeiro-game" target="_blank"><button>Ver Código</button></a>
-                    </div>
-                </div>
+                <!-- Area cards projetos -->
 
             </div>
 
         </section>
 
         <section id="business" class="container Business"> <!-- Seção de projetos para empresas, comércio e afins -->
-            <div id="agrupar" onclick="mostrarCards(2, false)">
+            <div id="agrupar">
                 <h2> business </h2>
                 <span id="iBusiness" class="material-symbols-outlined">expand_more</span>
             </div>
@@ -186,33 +162,7 @@
             <p>Projetos para empresas, comércio e afins</p>
             <div id="Businessalbum" class="album"> <!-- Card de cada projeto feito e os que ainda estão por vir -->
 
-                <div class="card">
-                    <div>
-                        <img src="./arquivos/imagens/projeto_cartaoInterativo.jpg" alt="Projeto jogo da velha">
-                    </div>
-                    <div id="info">
-                        <h3>Cartão Interativo</h3>
-                        <p>Desafio do Frontend Mentor de cartão de crédito interativo.</p>
-                        <div id="links">
-                            <a class="botao" href="https://pablobezerra.github.io/Cartao_interativo/" target="_blank"><button>Visitar</button></a>
-                            <a class="botao" href="https://github.com/PabloBezerra/Cartao_interativo" target="_blank"><button>Ver Código</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="./arquivos/imagens/projeto_Ecommerce-page.jpg" alt="Projeto jogo da velha">
-                    </div>
-                    <div id="info">
-                        <h3>Ecommerce Product Page</h3>
-                        <p>Desafio do Frontend Mentor de uma página de um produto comercial.</p>
-                        <div id="links">
-                            <a class="botao" href="https://pablobezerra.github.io/Ecommerce-product-page/" target="_blank"><button>Visitar</button></a>
-                            <a class="botao" href="https://github.com/PabloBezerra/Ecommerce-product-page" target="_blank"><button>Ver Código</button></a>
-                        </div>
-                    </div>
-                </div>
+               <!-- Area cards projetos -->
 
             </div>
 
@@ -220,7 +170,7 @@
 
         <section id="extras" class="container Extras"> <!-- Seção de projetos variados -->
 
-            <div id="agrupar" onclick="mostrarCards(3, false)">
+            <div id="agrupar" >
                 <h2> extras </h2>
                 <span id="iExtras" class="material-symbols-outlined">expand_more</span>
             </div>
@@ -228,30 +178,7 @@
             <p>Projetos variados</p>
             <div id="Extrasalbum" class="album"> <!-- Card de cada projeto feito e os que ainda estão por vir -->
 
-                <div class="card">
-                    <div>
-                        <img src="./arquivos/imagens/projeto_logoff.jpg" alt="Projeto LogOff">
-                    </div>
-                    <div id="info">
-                        <h3>LogOff</h3>
-                        <p>Agenda um desligamento ou reinicialização do windows, feito em Python com PyQty6.</p>
-                        <a class="botao" href="https://github.com/PabloBezerra/logoff" target="_blank"><button>Ver Código</button></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="./arquivos/imagens/projeto_gerenciadordeTarefas.jpg" alt="Projeto Gerenciador de tarefas">
-                    </div>
-                    <div id="info">
-                        <h3>Gerenciador de Tarefas</h3>
-                        <p>Desafio do Frontend Mentor de Gerenciador de Tarefas</p>
-                        <div id="links">
-                            <a class="botao" href="https://pablobezerra.github.io/Gerenciador_tarefas/" target="_blank"><button>Visitar</button></a>
-                            <a class="botao" href="https://github.com/PabloBezerra/Gerenciador_tarefas" target="_blank"><button>Ver Código</button></a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Area cards projetos -->
 
             </div>
             
