@@ -125,7 +125,7 @@
             const a2 = document.createElement('a')
             a2.href = element.links[1]
             a2.target='_blank'
-            a2.innerText = 'Ver Página'
+            a2.innerText = 'Visitar'
 
             divLink.appendChild(a2)
         }
@@ -140,7 +140,7 @@
         const album = document.querySelector(`.${element.destino}`).lastElementChild
         album.appendChild(divCard)
 
-    });
+    })
 
     // Configurações personalizado para cada tamanho de tela
 

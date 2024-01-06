@@ -10,23 +10,8 @@ $anil: #171A26;
 
 /* Configurações extras*/
 ::-webkit-scrollbar {
-    width: 5px;
+    display: none;
 }
-::-webkit-scrollbar-track {
-    background: linear-gradient(180deg, $anil 70%, $azul 100%);
-} 
 ::-webkit-scrollbar-thumb {
-    background-color: #ffffff85;
-    border-radius: 3px;
-}
-
-.revelar::-webkit-scrollbar {
-    width: 5px;
-}
-.revelar::-webkit-scrollbar-track {
-    background: transparent;
-} 
-.revelar::-webkit-scrollbar-thumb {
-    background-color: #ffffff85;
-    border-radius: 3px;
+    display: none;
 }
