@@ -1,0 +1,36 @@
+
+/* Reset e configurações globais*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    transition: all ease-in-out .8s;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* CONFIGURAÇÃO DO CORPO DA PÁGINA */
+html, body{
+    height: auto ;
+    width: calc(100vw - 5px) ;
+    min-width: 350px;
+    background: linear-gradient(180deg, $anil 70%, $azul 100%) fixed;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 95%;
+    height: auto;    
+}
+
+/* Configurações extras*/
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    display: none;
+}

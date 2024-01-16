@@ -1,0 +1,198 @@
+section.container{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-size: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.Games{
+        background: $anil url(../arquivos/fundos/0-600px/fundo_games.jpg)center  no-repeat fixed;
+
+        @include tablet{
+            background: $anil url(../arquivos/fundos/600-768px/fundo_games.JPG)center  no-repeat fixed;
+        }
+        @include largTablet{
+            background: $anil url(../arquivos/fundos/768-992px/fundo_games.JPG)center  no-repeat fixed;
+        }
+        @include monitores{
+            background: $anil url(../arquivos/fundos/992-1200px/fundo_games.JPG)center  no-repeat fixed;
+        }
+        @include tvs{
+            background: $anil url(../arquivos/fundos/+1200px/fundo_games.JPG)center  no-repeat fixed;
+        }
+    }
+
+    &.Business{
+        background: $anil url(../arquivos/fundos/0-600px/fundo_business.jpg)center no-repeat fixed;
+
+        @include tablet{
+            background: $anil url(../arquivos/fundos/600-768px/fundo_business.JPG)center no-repeat fixed;
+        }
+        @include largTablet{
+            background: $anil url(../arquivos/fundos/768-992px/fundo_business.JPG)center no-repeat fixed;
+        }
+        @include monitores{
+            background: $anil url(../arquivos/fundos/992-1200px/fundo_business.JPG)center no-repeat fixed;
+        }
+        @include tvs{
+            background: $anil url(../arquivos/fundos/+1200px/fundo_business.JPG)center no-repeat fixed;
+        }
+    }
+
+    &.Extras{
+        background: $anil url(../arquivos/fundos/0-600px/fundo_extras.jpg)center no-repeat fixed;
+
+        @include tablet{
+            background: $anil url(../arquivos/fundos/600-768px/fundo_extras.JPG)center no-repeat fixed;
+        }
+        @include largTablet{
+            background: $anil url(../arquivos/fundos/768-992px/fundo_extras.JPG)center no-repeat fixed;
+        }
+        @include monitores{
+            background: $anil url(../arquivos/fundos/992-1200px/fundo_extras.JPG)center no-repeat fixed;
+        }
+        @include tvs{
+            background: $anil url(../arquivos/fundos/+1200px/fundo_extras.JPG)center no-repeat fixed;
+        }
+    }
+
+    div#agrupar{
+        display: flex;
+        align-items: center;
+        color: $branco;
+        cursor: pointer;
+        margin: 10px 0px;
+        text-shadow: 0px 0px 5px black;
+
+        h2{ 
+            text-transform: uppercase;
+        }
+
+        span{ 
+            font-size: 1.8em;
+
+            &.rot{ transform: rotate(-180deg);}
+        }
+    }
+
+    p{
+        color: $branco;
+        text-align: center;
+        flex-basis: 100%;
+        font-size: 1.2em;
+        text-shadow: 0px 0px 5px black;
+        margin: 5px 0px;
+    }
+
+    div.album{
+        width: 100%;
+        height: 0px;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        @include noMobile{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &.revelar{
+            height: 80vh;
+            overflow-y: auto;
+
+            @include tablet{
+                height: 700px;
+            }
+            @include largTablet{
+                height: 700px;
+            }
+            @include monitores{
+                height: 500px;
+            }
+            @include tvs{
+                height: 550px;
+            }
+            
+            div.card {
+                width: 90%;
+                height: auto;
+                margin: 5px 0px;
+                background-color: #171a26bd;
+                border-radius: 10px;
+
+                @include tablet{
+                    width:45%;
+                    flex-basis: auto;
+                }
+                @include largTablet{
+                    width:45%;
+                    flex-basis: auto;
+                }
+                @include monitores{
+                    width:30%;
+                    flex-basis: auto;
+                }
+                @include tvs{
+                    width:30%;
+                    flex-basis: auto;
+                }
+
+                img{
+                    width: 100%;
+                    border-radius: 10px 10px 0px 0px ;
+                }
+
+                div.info{
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+
+                    @include noMobile{
+                        display: flex;
+                        flex-direction: column;
+                        height: 45px;
+                        overflow: hidden;
+                        justify-content:space-between;
+                    }
+                    
+                    h3, p{
+                        color: $branco;
+                        margin-bottom: 10px;
+                        text-align: left;
+                    }
+
+                    div.links{
+                        width: 100%;
+                        display: flex;
+
+                        a{
+                            background-color: $azul;
+                            border-radius: 5px;
+                            border: none;
+                            margin-right: 10px;
+                            padding: 8px;
+                            text-decoration: none;
+                            color: $anil;
+                            font-weight: bold;
+
+                            @include noMobile{
+                                background-color: $anil;
+                                color: $azul;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

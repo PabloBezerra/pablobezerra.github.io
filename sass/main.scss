@@ -1,526 +1,67 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Outfit&display=swap');
 
-/* Reset e configurações globais*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $font;
-    transition: all ease-in-out .8s;
-    list-style: none;
-    scroll-behavior: smooth;
-}
+//variaveis
+$font: 'Montserrat', Arial , sans-serif;
+$azul: #23F0C7;
+$branco: #ffffff;
+$anil: #171A26;
 
-/* CONFIGURAÇÃO DO CORPO DA PÁGINA */
-html, body{
-    height: auto ;
-    width: calc(100vw - 5px) ;
-    min-width: 350px;
-    background: linear-gradient(180deg, $anil 70%, $azul 100%) fixed;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* CONFIGURAÇÃO DO CABEÇALHO E O MENU DE NAVEGAÇÃO */
-header{
-    width: 95%;
-    height: 0px;
-    overflow: hidden;
-    visibility: hidden;
-    padding: 5px 10px;
-    background-color: $anil;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: fixed;
-    z-index: 1000;    
-
-    &.novo{
-        height: 50px;
-        overflow: visible;
-        visibility: visible;
-    }
-
-    h1{
-        color: $branco;
-        font-size: 1.6em;
-    }
-
-    span{
-        color: $branco;
-        cursor: pointer;
-    }
-
-    nav{
-        display: flex;
-        padding: 5px 10px;
-        flex-basis:100% ;
-        background-color: $anil;
-        height: 0px;
-        overflow: hidden;
-        visibility: hidden;
-
-        &.visivel{
-            height: 300px;
-            overflow:auto;
-            visibility: visible;
-            position: relative;
-        }
-
-        ul{
-            li{
-                padding: 10px 0px;
-
-                a{
-                    width: 100%;
-                    height: 100%;
-                    color: $branco;
-                    text-decoration: none;
-                    font-size: 1.4em;
-                    position: relative;
-                }
-            }
-        }
+//mixins
+@mixin onlyBig{
+    @media  screen and (min-width:992px) {
+        @content;        
     }
 }
 
-/* CONFIGURAÇÃO DO CORPO DO SITE */
-main {
-    width: 95%;
-    height: auto;
-
-    section#inicio{
-        width: 100%;
-        height: auto;
-        background: $anil url(../arquivos/fundos/0-600px/fundo_inicio.jpg) center scroll;
-        background-size: cover;
-        padding: 10px;
-        border-radius: 10px;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        @media screen and (min-width:600px) and (max-width:767px){
-            background: $anil url(/arquivos/fundos/600-768px/fundo_inicio.JPG) center scroll;
-            align-items: center;
-        }
-
-        div{
-            h1{
-                margin-top: 10px;
-                color: $branco;
-                text-transform: uppercase;
-                font-size: 2.5em;
-            }
-
-            p{
-                color: $azul;
-                text-transform: capitalize;
-                margin-top: 10px;
-                text-shadow: 0px 0px 20px black;
-            }
-        }
-
-        img#perfil{
-            width: 80%;
-            max-width: 300px;
-            border-radius: 50%;
-            margin: 50px 0;
-            align-self: center;
-            box-shadow: 0px 0px 10px $azul;
-        }
-
-        nav#icones{
-            width: 100%;
-            height: auto;
-            margin: 20px 0;
-
-            ul{
-                width: 100%;
-                list-style: none;
-                display: flex;
-                justify-content: space-around;
-
-                li{
-                    img{
-                        width: 50px;
-                        border-radius: 50%;
-                    }
-                }
-            }
-        }
-    }
-
-    h2#titulo{
-        width: auto;
-        color: $azul;
-        text-align: center;
-        font-size: 2em;
-        margin: 20px 0px;
-        position: relative;
-        border-top: 2px solid $branco;
-        border-bottom: 2px solid $branco;
-        box-shadow: 0px -5px 5px $branco none;
-    }
-
-    section#carreira{
-        background-color: #171a26d7;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-
-        h3{
-            text-align: center;
-            color: $azul;
-            font-size: 1.5em;
-            flex-basis: 100%;
-            text-transform: uppercase ;
-        }
-
-        article{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex-wrap: wrap;
-
-            p{
-                color: white;
-                font-size: 1.1em;
-                text-align: justify;
-            }
-
-            img{
-                width: 150px;
-                margin: 5px 0;
-
-                &#programa{
-                order: 3;
-                }
-            }
-        }
-
-        a.botao{
-            margin: 20px 0px;
-            background-color: $azul;
-            padding: 5px;
-            border-radius: 10px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            color: $anil;
-            font-style: normal;
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-        }
-    }
-
-    section#habilidades{
-        margin-top: 20px;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #171a26d7;
-
-        h3{
-            text-align: center;
-            color: $azul;
-            font-size: 1.5em;
-            flex-basis: 100%;
-            text-transform: uppercase ;
-        }
-
-        div.carrossel{
-            width: 100%;
-            height: auto;
-            background-color: transparent;
-            margin-top: 20px;
-            overflow:hidden;
-            position: relative;
-
-            div.amontoado{
-                width: auto;
-                height: auto;
-                background-color: transparent;
-                display: flex;
-                flex-direction: row;
-                transform: translateX(0);
-
-                div{
-                    min-width: 280px;
-                    height: 230px;
-                    margin: 0px 5px;
-                    background-color: #ffffff15;
-                    border-radius: 10px;
-                    padding: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-
-                    img{ width: 100px;}
-
-                    p{
-                        color: $branco;
-                        text-align: center;
-                        font-size: 1em;
-
-                        em{
-                            font-style: normal;
-                            color: $azul;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-
-            div.pass{
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                padding: 0%;
-                background-color: transparent;
-                color: $branco;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                position: absolute;
-
-                i{
-                    span{
-                        font-size: 2.5em;
-                        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.808);
-                        border-radius: 50%;
-                        transition: .3s;
-                        cursor: pointer;
-                        position: relative;
-                        left: 5px;
-                    }
-                }
-            }
-        }
-    }
-
-    section.container{
-        width: 100%;
-        height: auto;
-        min-height: 100px;
-        background-size: auto;
-        border-radius: 8px;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        &.Games{
-            background: $anil url(../arquivos/fundos/0-600px/fundo_games.jpg)center  no-repeat fixed;
-        }
-
-        &.Business{
-            background: $anil url(../arquivos/fundos/0-600px/fundo_business.jpg)center no-repeat fixed;
-        }
-
-        &.Extras{
-            background: $anil url(../arquivos/fundos/0-600px/fundo_extras.jpg)center no-repeat fixed;
-        }
-
-        div#agrupar{
-            display: flex;
-            align-items: center;
-            color: $branco;
-            cursor: pointer;
-            margin: 10px 0px;
-            text-shadow: 0px 0px 5px black;
-
-            h2{ text-transform: uppercase;}
-
-            span{ 
-                font-size: 1.8em;
-
-                &.rot{ transform: rotate(-180deg);}
-            }
-        }
-
-        p{
-            color: $branco;
-            text-align: center;
-            flex-basis: 100%;
-            font-size: 1.2em;
-            text-shadow: 0px 0px 5px black;
-            margin: 5px 0px;
-        }
-
-        div.album{
-            width: 100%;
-            height: 0px;
-            overflow-y: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-
-            &.revelar{
-                height: 80vh;
-                overflow-y: auto;
-                
-                div.card {
-                    width: 90%;
-                    height: auto;
-                    margin: 5px 0px;
-                    background-color: #171a26bd;
-                    border-radius: 10px;
-
-                    img{
-                        width: 100%;
-                        border-radius: 10px 10px 0px 0px ;
-                    }
-
-                    div.info{
-                        padding: 10px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        align-items: flex-start;
-                        
-                        h3, p{
-                            color: $branco;
-                            margin-bottom: 10px;
-                            text-align: left;
-                        }
-
-                        div.links{
-                            width: 100%;
-                            display: flex;
-
-                            a{
-                                background-color: $azul;
-                                border-radius: 5px;
-                                border: none;
-                                margin-right: 10px;
-                                padding: 8px;
-                                text-decoration: none;
-                                color: $anil;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+@mixin noMobile{
+    @media screen and (min-width: 600px) {
+        @content;
     }
 }
 
-/* CONFIGURAÇÃO DO RODAPÉ DO SITE */
-footer{
-    width: 100%;
-    margin-top: 50px;
-    padding: 20px;
-    background-color: $branco;
-
-    #agrupar2{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        #icones{
-            width: 200px;
-            height: auto;
-            margin: 20px 0 ;
-            
-            ul{
-            width: 100%;
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            
-                li img{
-                width: 30px;
-                border-radius: 50%;
-                filter:grayscale(100%) ;
-                }
-            }
-        }
+@mixin tablet {
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        @content;
     }
+}
 
-    h4{
-        margin-top: 10px;
-        color: $anil;
-        text-align: center;
+@mixin largTablet {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
     }
+}
 
-    form{
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-
-        label{
-            margin: 10px 0;
-            color: $anil;
-            font-weight: bold;
-        }
-
-        input{
-            height: 30px;
-            padding: 5px;
-            background-color: $anil;
-            color: $branco;
-            border: none;
-            outline: none;
-            border-radius: 5px;
-            
-            &:focus{
-                border: 2px solid $azul;
-            }
-        }
-
-        textarea{
-            background-color: $anil;
-            color: $branco;
-            padding: 5px;
-            border: none;
-            outline: none;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            resize: vertical;
-
-            &:focus{
-                border: 2px solid $azul
-            }
-        }
-
-        #botao{
-            width: 100px;
-            font-size: 1em;
-            margin-bottom: 20px;
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-
-            &:disabled{
-                filter: opacity(50%);
-            }
-        }
-
-        p{
-            text-align: center;
-            margin: 20px 0;
-            font-weight: bold;
-            color: $anil;
-        }
-
-        .p_required{
-            color: darkred;
-            margin: 5px 0;
-            display: none;
-        }
+@mixin monitores {
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        @content;
     }
+}
+
+@mixin tvs {
+    @media screen and (min-width:1201px) {
+        @content;
+    }
+}
+
+@import 'animacao.scss', 
+        'geral.scss', 
+        'header.scss', 
+        'inicio-titulos.scss', 
+        'carreira.scss', 
+        'habilidades.scss', 
+        'containers.scss', 
+        'footer.scss';
+
+@include tablet{
+
+}
+@include largTablet{
+
+}
+@include monitores{
+
+}
+@include tvs{
+
 }

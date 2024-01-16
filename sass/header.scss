@@ -1,0 +1,104 @@
+ 
+header {  
+    width: 95%;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    padding: 5px 10px;
+    background-color: $anil;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;    
+    
+    @include monitores {
+        flex-direction: row;
+        align-items: center;
+    }
+    @include tvs{
+        max-width: 1400px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &.novo{
+        height: 50px;
+        overflow: visible;
+        visibility: visible;
+
+        @include onlyBig{
+            overflow: auto;
+        }
+    }
+
+    h1{
+        color: $branco;
+        font-size: 1.6em;
+    }
+
+    span{
+        color: $branco;
+        cursor: pointer;
+
+        @include onlyBig{
+            visibility: hidden;
+        }
+    }
+
+    nav#menu{
+        display: flex;
+        padding: 5px 10px;
+        flex-basis:100% ;
+        background-color: $anil;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+
+        @include onlyBig{
+            height: 100%;
+            visibility: visible;
+            flex-basis: auto;
+            padding: 0;
+        }
+
+        &.visivel{
+            height: 300px;
+            overflow:auto;
+            visibility: visible;
+            position: relative;
+
+            @include onlyBig{
+                overflow: hidden;
+            }
+        }
+
+        ul{
+            @include onlyBig{
+                display: flex;
+                flex-direction: row;
+            }
+
+            li{
+                padding: 10px 0px;
+
+                @include onlyBig{
+                    margin: 0 5px;
+                    padding: 5px 0;
+                    font-size: 1em;
+                }
+
+                a{
+                    width: 100%;
+                    height: 100%;
+                    color: $branco;
+                    text-decoration: none;
+                    font-size: 1.4em;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+footer{
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: $branco;
+
+    #agrupar2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        #icones{
+            width: 200px;
+            height: auto;
+            margin: 20px 0 ;
+            
+            ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            
+                li img{
+                width: 30px;
+                border-radius: 50%;
+                filter:grayscale(100%) ;
+                }
+            }
+        }
+    }
+
+    h4{
+        margin-top: 10px;
+        color: $anil;
+        text-align: center;
+    }
+
+    form{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        label{
+            margin: 10px 0;
+            color: $anil;
+            font-weight: bold;
+        }
+
+        input{
+            height: 30px;
+            padding: 5px;
+            background-color: $anil;
+            color: $branco;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            
+            &:focus{
+                border: 2px solid $azul;
+            }
+        }
+
+        textarea{
+            background-color: $anil;
+            color: $branco;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            resize: vertical;
+
+            &:focus{
+                border: 2px solid $azul
+            }
+        }
+
+        #botao{
+            width: 100px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+
+            &:disabled{
+                filter: opacity(50%);
+            }
+        }
+
+        p{
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            color: $anil;
+        }
+
+        .p_required{
+            color: darkred;
+            margin: 5px 0;
+            display: none;
+        }
+    }
+}

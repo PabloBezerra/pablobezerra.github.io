@@ -1,0 +1,177 @@
+section#inicio{
+    width: 100%;
+    height: auto;
+    background: $anil url(../arquivos/fundos/0-600px/fundo_inicio.jpg) center scroll;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include tablet{
+        background: $anil url(../arquivos/fundos/600-768px/fundo_inicio.JPG) center scroll;
+        align-items: center;
+    }
+    @include largTablet{
+        background: $anil url(../arquivos/fundos/768-992px/fundo_inicio.JPG) center no-repeat;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    @include monitores{
+        background: $anil url(../arquivos/fundos/992-1200px/fundo_inicio.JPG) center no-repeat;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding-left: 30px;
+    }
+    @include tvs{
+        background: $anil url(../arquivos/fundos/+1200px/fundo_inicio.JPG) center no-repeat;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding-left: 40px;
+    }
+
+    div{
+        @include largTablet{
+            width:300px;
+        }
+        @include monitores{
+            width:450px;
+            align-self: flex-start;
+        }
+        @include tvs{
+            width:550px;
+            align-self: flex-start;
+        }
+
+        h1{
+            margin-top: 10px;
+            color: $branco;
+            text-transform: uppercase;
+            font-size: 2.5em;
+
+            @include tablet{
+                text-align: center;
+            }
+            @include monitores{
+                font-size: 2.9em;
+            }
+            @include tvs{
+                font-size: 3.5em;
+            }
+        }
+
+        p{
+            color: $azul;
+            text-transform: capitalize;
+            margin-top: 10px;
+            text-shadow: 0px 0px 20px black;
+
+            @include tablet{
+                text-align: center;
+                font-size: 1.2em;
+            }
+            @include monitores{
+                font-size: 1.5em;
+            }
+            @include tvs{
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    img#perfil{
+        width: 80%;
+        max-width: 300px;
+        border-radius: 50%;
+        margin: 50px 0;
+        align-self: center;
+        box-shadow: 0px 0px 10px $azul;
+
+        @include tablet{
+            max-width: 350px;
+        }
+        @include largTablet{
+            order: 4;
+            flex-basis: 50%;
+        }
+        @include monitores{
+            order: 4;
+            flex-basis: 50%;
+            max-width: 350px;
+        }
+        @include tvs{
+            order: 4;
+            flex-basis: 50%;
+            max-width: 400px;
+        }
+    }
+
+    nav#icones{
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+
+        @include largTablet{
+            height: auto;
+            width:300px;
+        }
+        @include monitores{
+            height: auto;
+            width:400px;
+            align-self: flex-start;
+        }
+        @include tvs {
+            height: auto;
+            width:400px;
+            margin: 40px 0;
+            align-self: flex-start;
+        }
+
+        ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+            li{
+                img{
+                    width: 50px;
+                    border-radius: 50%;
+
+                    @include tablet{
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+h2#titulo{
+    width: auto;
+    color: $azul;
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0px;
+    position: relative;
+    border-top: 2px solid $branco;
+    border-bottom: 2px solid $branco;
+    box-shadow: 0px -5px 5px $branco none;
+}
