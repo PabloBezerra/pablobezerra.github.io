@@ -1,0 +1,91 @@
+{
+    "redes":[
+        {
+            "rede": "facebook",
+            "link": "https://www.facebook.com/pablo.dasilva.505"
+        },
+        {
+            "rede": "instagram",
+            "link": "https://www.instagram.com/pablobezerras/"
+        },
+        {
+            "rede": "twitter",
+            "link": "https://twitter.com/PabloBezerras"
+        },
+        {
+            "rede": "linkedin",
+            "link": "https://www.linkedin.com/in/pablo-bezerra-18710524a/"
+        },
+        {
+            "rede": "github",
+            "link": "https://github.com/PabloBezerra"
+        }
+
+    ],
+    "habilidades":[
+        {
+            "nome":"Python",
+            "descricao":"É amplamente usada no desenvolvimento web, automação, análise de dados e muito mais."
+        },
+        {
+            "nome":"Html",
+            "descricao":"(Hypertext Markup Language) é a linguagem padrão para criar páginas da web."
+        },
+        {
+            "nome":"Css",
+            "descricao":"(Cascading Style Sheets),é uma linguagem poderosa para personalizar a estética das páginas web."
+        },
+        {
+            "nome":"JavaScript",
+            "descricao":"É uma linguagem de programação fundamental para o desenvolvimento web."
+        },
+        {
+            "nome":"Formação",
+            "descricao":"React, Bootstrap, NodeJs, MySQL."
+        }
+    ],
+    "projetos":[
+        {
+            "nome":"jogo da velha",
+            "img":"./arquivos/imagens/projeto_jogodavelha.jpg",
+            "desc":"O clássico jogo da velha feito em Python com PyQty6.",
+            "link1":"https://github.com/PabloBezerra/Primeiro-game",
+            "link2":""
+        },
+        {
+            "nome":"Quiz Conhecimentos Gerais",
+            "img":"./arquivos/imagens/projeto_QuizConhecimentosGerais.jpg",
+            "desc":"Teste seus conhecimentos com esse game. Feito em Html,Css e JavaScript.",
+            "link1":"https://pablobezerra.github.io/Quiz_Conhecimentos_Gerais/",
+            "link2":"https://github.com/PabloBezerra/Quiz_Conhecimentos_Gerais"
+        },
+        {
+            "nome":"Cartão Interativo",
+            "img":"./arquivos/imagens/projeto_cartaoInterativo.jpg",
+            "desc":"Desafio do Frontend Mentor de cartão de crédito interativo.",
+            "link1":"https://pablobezerra.github.io/Cartao_interativo/",
+            "link2":"https://github.com/PabloBezerra/Cartao_interativo"
+        },
+        {
+            "nome":"Ecommerce Product Page",
+            "img":"./arquivos/imagens/projeto_Ecommerce-page.jpg",
+            "desc":"Desafio do Frontend Mentor de uma página de um produto comercial.",
+            "link1":"https://pablobezerra.github.io/Ecommerce-product-page/",
+            "link2":"https://github.com/PabloBezerra/Ecommerce-product-page"
+        },
+        {
+            "nome":"Projeto LogOff",
+            "img":"./arquivos/imagens/projeto_logoff.jpg",
+            "desc":"Agenda um desligamento ou reinicialização do windows, feito em Python com PyQty6.",
+            "link1":"https://github.com/PabloBezerra/logoff",
+            "link2":""
+        },
+        {
+            "nome":"Gerenciador de Tarefas",
+            "img":"./arquivos/imagens/projeto_gerenciadordeTarefas.jpg",
+            "desc":"Desafio do Frontend Mentor de Gerenciador de Tarefas",
+            "link1":"https://pablobezerra.github.io/Gerenciador_tarefas/",
+            "link2":"https://github.com/PabloBezerra/Gerenciador_tarefas"
+        }
+    ]
+}
