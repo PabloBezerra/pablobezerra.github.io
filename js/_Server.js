@@ -1,33 +1,28 @@
 export class Server{
     constructor(){
         this.url = "./arquivos/dados.json"
-        this.redes = []
-        this.habilidades =[]
-        this.projetos = []
+        this.dados = {}
     }
 
     async start(){
-        const response = await fetch(this.url)
-        if(response.status === 200){
-            const data = await response.json()
-            localStorage.setItem('dados', `${JSON.stringify(data)}`)
-            console.log('foi')
-            return true
-        }else{location.reload(true)}
+        if(sessionStorage.getItem('dados') === null){
+            const response = await fetch(this.url)
+            if(response.status === 200){
+                const data = await response.json()
+                sessionStorage.setItem('dados', `${JSON.stringify(data)}`)
+                this.recuperaDados()
+            }else{location.reload(true)}
+        }else{this.recuperaDados()}
+        return true
     }
 
-    separaDados(){
-        const data = localStorage.getItem('dados')
-        if(data){
-            const dados = JSON.parse(data)
-            this.redes = dados[0]
-            this.habilidades = dados[1]
-            this.projetos = dados[2]
-        }else{location.reload(true)}
+    recuperaDados(){
+        this.dados = JSON.parse(sessionStorage.getItem('dados'))
     }
 
     getDados(info){
-        console.log(this[info])
-        return this[info]
+        if(this.dados[info]){
+            return this.dados[info]
+        }
     }
 }
